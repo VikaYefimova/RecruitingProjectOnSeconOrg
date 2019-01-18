@@ -8,7 +8,7 @@ public with sharing class InsertCandidateCV {
 		System.debug('status' + status);
 		system.debug('image ++++     : ' + imageString);
 		System.debug('selected jobs :   ' + selectedJobs);
-		System.debug('only for test pulling');
+		
         return 'Hello in Apex class';
     }
 }
