@@ -1,0 +1,114 @@
+<aura:component controller="JobAdvertisementsController">
+	<aura:attribute name="jobAdvertisements" type="Job_Advertisement__c[]"/>
+    <aura:attribute name="selectedJobAdvertisements" type="Object[]"/>
+    <aura:attribute name="selectJobCount" type="Integer" default="0" access="global"/>
+    <aura:attribute name="job" type="Job_Advertisement__c"/>
+    <aura:attribute name="recordsOnPage" type="Integer" default="10"/>
+    <aura:attribute name="pageNumber" type="Integer" default="0"/>
+    <aura:attribute name="fullName" type="String" default=""/>
+    <aura:attribute name="operator" type="String" default=""/>
+    <aura:attribute name="publishDate" type="String" default=""/>
+    <aura:attribute name="salary" type="String" default=""/>
+    <aura:attribute name="disablePrevious" type="Boolean" default="true"/>
+    <aura:attribute name="disableNext" type="Boolean" default="false"/>
+    <aura:attribute name="noRecordsFlag" type="Boolean"/>
+    <aura:attribute name="lastPageNumber" type="String"/>
+    <aura:attribute name="candidateStatus" type="String"/>
+    <aura:attribute name="image" type="String" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:handler name="init" value="{! this}" action="{!c.doInit}"/>
+    <aura:handler name="SelectJobEvent" event="c:SelectJob" action="{!c.selectedJobHandler}"/>
+    <aura:handler name="searchRecordsEvent" event="c:SearchRecords" action="{!c.searchRecords}"/>
+    <aura:handler name="resetSearchResults" event="c:ResetSearch" action="{!c.resetSearch}"/>
+    <aura:handler name="closeWindow" event="c:closeModalWindow" action="{!c.closeModel}"/>
+    <aura:handler   event="c:DeselectJob" action="{!c.deselectHandler}"/>
+    
+    
+    
+    <div>
+        <div>
+        	<div style="width: 25%; float: left; position:fixed; z-index: 9; background-color: #fafaf9;">
+               &nbsp; 
+            </div>
+                <div style="width: 50%; float:left; left: 25%; position:fixed; z-index: 9; background-color: #fafaf9;">
+                    <div style="width: 100%">
+                        <c:searchRecordsComponent />
+                    </div>    
+                </div>
+                <div style="width: 25%; float: left; position: fixed; left: 75%; z-index: 9; background-color: #fafaf9; height: 51px;" class="slds-grid slds-grid_vertical-align-end">
+                    <div class="slds-m-left_medium" style="height: 30px; width: 59%;">
+                        <span class="selectedJobCountLabel">Selected Jobs</span>
+                        <ui:outputNumber class="circle-width-text" aura:id="selectedJobCount" value="{!v.selectJobCount}" format="00">
+                        </ui:outputNumber>
+                        <lightning:button class="apply-button" aura:id="applyButton" variant="neutral" label="Apply" onclick="{!c.applyButtonClick}"/>
+                    </div>
+                </div>
+        </div>
+         
+        <div style="position: relative; top: 59px; z-index: 1;">
+                <div style="width: 25%; clear: left; float: left; top: 69px;">
+                    &nbsp;
+                </div>
+                <div style="width: 50%; float: left; top: 69px;">
+                    <div>
+                        {!v.body}
+                        <span>
+                            <aura:if isTrue="{!not(v.noRecordsFlag)}">
+                                <aura:iteration items="{!v.jobAdvertisements}" var="item">
+                                        <c:jobAdvertisementComponent aura:id="jobItem" job="{!item}" selectedJobs="{!v.selectedJobAdvertisements}" jobs="{!v.jobAdvertisements}"/>
+                                </aura:iteration>
+                            </aura:if>
+                            <aura:if isTrue="{!v.noRecordsFlag}">
+                            <ui:message title="No Records" severity="warning" closable="false">
+                                    No records found. Please, change criterias for search, or reset search! 
+                            </ui:message>
+                            </aura:if>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div style="width:25%; float: left; position: relative; height: 100%;">
+                        <lightning:layout>
+                            <lightning:layoutItem class="left-align">
+                                <div class="slds-m-left_medium">
+                                    <div class="slds-is-fixed" style="height: 75%; width:16%;">
+                                            <div class="notFixedJobs">
+                                                    <aura:iteration items="{!v.selectedJobAdvertisements}" var="item">
+                                                        <c:selectedJobAdvertisementComponent selectedJob="{!item}" selectedJobs="{!v.selectedJobAdvertisements}"/>
+                                                    </aura:iteration>
+                                            </div>
+                                    </div>
+                                </div>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                </div>
+                <div class="slds-m-left_medium" style="width:25%; float: left; position: fixed; left: 75%; bottom: 10px; height: auto;">
+                    <div  style="width: 250px; background-color: white; border-width: 1px; border-style: solid; border-color: #dddbda; height: 100%; border-radius: 0.25rem; bottom: 1px;">
+                        <div  style="padding-top: 4px; padding-bottom: 4px;">
+                            <div class="slds-align_absolute-center" style="margin-bottom: 4px;">
+                                <span style="margin-left: 4px;">Display Records per page:  </span>
+                                <lightning:select class="slds-align_absolute-center select-countRecord" aura:id="recordsCount" name="selectCountRecords" label="" required="false" value="{!v.recordsOnPage}" onchange="{!c.handleCountRecordChange}">
+                                	<option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                </lightning:select>
+                            </div>
+                            <div class="slds-align_absolute-center">
+                                <lightning:button class="button-pagination" variant="neutral" label="First" onclick="{!c.goToFirstPage}" disabled="{!v.disablePrevious}"/>
+                                <lightning:button class="button-pagination" variant="neutral" label="Previous" onclick="{!c.goToPreviousPage}" disabled="{!v.disablePrevious}"/>
+                                <lightning:button class="button-pagination" variant="neutral" label="Next" onclick="{!c.goToNextPage}" disabled="{!v.disableNext}"/>
+                                <lightning:button class="button-pagination" variant="neutral" label="Last" onclick="{!c.goToLastPage}" disabled="{!v.disableNext}"/>
+                            </div>
+                        </div> 
+                    </div>
+            	</div>
+        </div>
+    </div>
+    <div class="modalWindowBlock" style="height: 640px;">
+        <aura:if isTrue="{!v.isOpen}">
+            <c:modalWindow selectedJobs="{!v.selectedJobAdvertisements}"/>
+        </aura:if>
+    </div> 
+</aura:component>

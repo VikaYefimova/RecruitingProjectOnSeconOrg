@@ -1,0 +1,64 @@
+.THIS .selectedJobCountLabel{
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.THIS .circle-width-text{
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    float: left;
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+.THIS .slds-button.slds-button_neutral.apply-button{
+    float:right;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-width: 0px;
+    
+}
+.THIS .notFixedJobs{
+    padding-right: 20px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+.THIS .notFixedSelectedJobs::-webkit-scrollbar {
+    width: 1em;
+}
+.THIS .notFixedSelectedJobs::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.THIS .notFixedSelectedJobs::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.THIS .slds-form-element.slds-align_absolute-center.select-countRecord{
+    margin-right: 4px;
+    float: right;
+}
+.THIS .slds-button.slds-button_neutral.button-pagination{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.THIS .textarea-info{
+    border-radius: .25rem;
+    border-color: #d9dbdd;
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 305px;
+    height: 51px;
+}
+.THIS .image-preview{
+    width: 278px; 
+    margin-top: 3px;
+}

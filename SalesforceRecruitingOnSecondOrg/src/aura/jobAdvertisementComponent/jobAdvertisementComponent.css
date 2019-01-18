@@ -1,0 +1,11 @@
+.THIS .child-panel {
+    margin-top: 5px;
+    border-top: 1px solid #ebeae9;
+}
+.THIS .slds-button.openDetails.right-align.slds-button_icon-bare{
+    float: right;
+    right: 10px;
+}
+.THIS .slds-button.slds-button_neutral.selectButton{
+    float:right;
+}

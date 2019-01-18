@@ -1,0 +1,58 @@
+<apex:page controller="ListOfJobAdvertisementController" standardStylesheets="true" cache="false">
+    <apex:pageBlock >
+            <apex:form id="page" enctype="multipart/form-data">
+                    <span>
+                        <apex:inputText value="{!searchByNameString}" label="Input" html-placeholder="Name of the vacancy"/>
+                        
+                    </span>
+                    <span style="border-left: 10px; border-color: black;">
+                        <apex:inputText value="{!searchBySalaryString}" label="Input" html-placeholder="Salary"/>
+                        <apex:selectList value="{!selectedOperator}" multiselect="false" size="1">
+                            <apex:selectOptions value="{!ListOfOperators}"/>
+                        </apex:selectList>
+                        
+                    </span>
+                    <span>
+                        <apex:inputCheckbox label="Active" id="Active" value="{!activeCheckBox}"/>
+                        <apex:outputLabel value="Active" for="Active"/>
+                        <apex:inputCheckbox label="Archived" id="Archived" value="{!archivedCheckBox}"/>
+                        <apex:outputLabel value="Archived" for="Archived"/>
+                        <apex:inputCheckbox label="On hold" id="onHold" value="{!onHoldCheckBox}"/>
+                        <apex:outputLabel value="On hold" for="onHold"/>
+                        
+                    </span>
+                <span style="border-left: 10px;">
+                    <apex:commandButton value="Search" action="{!searchRecords}" style="width: 70px; height: 20px"/> 
+                </span>
+                <span style="border-left: 10px;">
+                    <apex:commandButton value="Clear" action="{!clear}" style="width: 70px; height: 20px"/>
+                </span>
+                <apex:pageMessage severity="INFO" detail="No records found" strength="2" rendered="{!noRecords}"/>
+                <apex:pageBlockTable value="{!jobAdvertisements}" var="job" style="margin-top: 20px;">
+                    <apex:column headerValue="Name" value="{!job.Name}"/>
+                    <apex:column headerValue="Min Salary" value="{!job.Minimum_Salary__c}"/>
+                    <apex:column headerValue="Max Salary" value="{!job.Maximum_Salary__c}"/>
+                    <apex:column headerValue="Manager Name" value="{!job.Manager_name__c}"/>
+                    <apex:column headerValue="Phone" value="{!job.Phone__c}"/>
+                    <apex:column headerValue="Status" value="{!job.Status__c}"/>
+                </apex:pageBlockTable>
+                <div align="center">
+                    <apex:commandButton value="First Page" action="{!first}" disabled="{!DisablePrv}"   reRender="page" />
+                    <apex:commandButton value="PreviousPage" action="{!previous}" disabled="{!DisablePrv}" reRender="page"/>
+                    <apex:commandButton value="NextPage" action="{!next}" disabled="{!DisableNxt}" reRender="page"/>
+                    <apex:commandButton value="LastPage" action="{!last}" disabled="{!DisableNxt}" reRender="page"/>
+                    
+                </div>
+                <apex:outputLabel value="Display records per page" for="recordsOnPage"/> <apex:selectList id="recordsOnPage" value="{!rec}" size="1" onchange="{!updatePage}" style="margin-left: 3px;">
+                    <apex:selectOption itemLabel="5" itemValue="5"></apex:selectOption>
+                    <apex:selectOption itemLabel="10" itemValue="10"></apex:selectOption>
+                    <apex:selectOption itemLabel="15" itemValue="15"></apex:selectOption>
+                    <apex:selectOption itemLabel="20" itemValue="20"></apex:selectOption>
+                    <apex:selectOption itemLabel="25" itemValue="25"></apex:selectOption>
+                    <apex:selectOption itemLabel="30" itemValue="30"></apex:selectOption>
+                    <apex:actionSupport event="onchange" reRender="page" action="{!updatePage}"/>
+                </apex:selectList><br/>
+
+            </apex:form>
+    </apex:pageBlock>
+</apex:page>

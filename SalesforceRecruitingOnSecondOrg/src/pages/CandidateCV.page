@@ -1,0 +1,31 @@
+<apex:page title="Candidate CV">
+    <apex:includeScript value="{! $Resource.jQuery }"/>
+    <apex:stylesheet value="{!URLFOR($Resource.datePicker,'datePicker/styles/jquery-ui.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.datePicker,'/datePicker/js/jquery-ui.js')}"/>
+    <script>
+    $(function(){
+    	$(".photo").on("change", function(e){
+            alert('ghjgjhgjg');
+            var $input = $(this);
+            var inputFiles = this.files;
+            if(inputFiles == undefined || inputFiles.length == 0) return;
+            var inputFile = inputFiles[0];
+        
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                $input.next().attr("src", event.target.result);
+                $('.preview').attr("src", event.target.result);
+            };
+            reader.onerror = function(event) {
+                alert("ERROR: " + event.target.error.code);
+            };
+            reader.readAsDataURL(inputFile);
+        });
+    })
+        
+
+    </script>
+    <header>Candidate CV</header>
+    <div><apex:inputFile value="" accept="png,jpg"  styleclass="photo"></apex:inputFile></div>
+    <img src="" class="preview" />
+</apex:page>

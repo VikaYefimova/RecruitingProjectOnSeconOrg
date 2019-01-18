@@ -1,0 +1,1254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d16a2a53-2afa-439a-947d-a7e0ad3d176a}</ProjectGuid>
+    <ApexVersion>42.0</ApexVersion>
+    <Name>SalesforceRecruitingOnSecondOrg</Name>
+    <AssemblyName>SalesforceRecruitingOnSecondOrg</AssemblyName>
+    <RootNamespace>SalesforceRecruitingOnSecondOrg</RootNamespace>
+    <ProjectVersion>6</ProjectVersion>
+    <PackageVersion>1.25.1.4</PackageVersion>
+    <SyncOption>True</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="aura\" />
+    <Folder Include="aura\closeModalWindow\" />
+    <Folder Include="aura\DeselectJob\" />
+    <Folder Include="aura\jobAdvertisementComponent\" />
+    <Folder Include="aura\JobAdvertisementsApplication\" />
+    <Folder Include="aura\jobAdvertisements\" />
+    <Folder Include="aura\modalWindow\" />
+    <Folder Include="aura\ResetSearch\" />
+    <Folder Include="aura\searchRecordsComponent\" />
+    <Folder Include="aura\SearchRecords\" />
+    <Folder Include="aura\selectedJobAdvertisementComponent\" />
+    <Folder Include="aura\SelectJob\" />
+    <Folder Include="classes\" />
+    <Folder Include="components\" />
+    <Folder Include="objects\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+    <Folder Include="staticresources\" />
+    <Folder Include="staticresources\datePicker\" />
+    <Folder Include="staticresources\datePicker\datePicker\" />
+    <Folder Include="staticresources\datePicker\datePicker\js\" />
+    <Folder Include="staticresources\datePicker\datePicker\styles\" />
+    <Folder Include="staticresources\datePicker\datePicker\styles\images\" />
+    <Folder Include="staticresources\datePicker\__MACOSX\" />
+    <Folder Include="staticresources\datePicker\__MACOSX\datePicker\" />
+    <Folder Include="staticresources\datePicker\__MACOSX\datePicker\js\" />
+    <Folder Include="staticresources\datePicker\__MACOSX\datePicker\styles\" />
+    <Folder Include="staticresources\datePicker\__MACOSX\datePicker\styles\images\" />
+    <Folder Include="staticresources\siteMainPage\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\images\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\js\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\js\siteMainPage\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\js\siteMainPage\js\" />
+    <Folder Include="staticresources\siteMainPage\siteMainPage\styles\" />
+    <Folder Include="staticresources\SiteSamples\" />
+    <Folder Include="staticresources\SiteSamples\img\" />
+    <Folder Include="staticresources\TWS_Sync_Data\" />
+    <Folder Include="triggers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aura\closeModalWindow\closeModalWindow.evt">
+      <PhysicalRelativePath>src\aura\closeModalWindow\closeModalWindow.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>closeModalWindow</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\DeselectJob\DeselectJob.evt">
+      <PhysicalRelativePath>src\aura\DeselectJob\DeselectJob.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>DeselectJob</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp">
+      <PhysicalRelativePath>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisementComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisementComponent\jobAdvertisementComponent.css">
+      <PhysicalRelativePath>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisementComponent</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisementComponent\jobAdvertisementComponentController.js">
+      <PhysicalRelativePath>src\aura\jobAdvertisementComponent\jobAdvertisementComponentController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisementComponent</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisementComponent\jobAdvertisementComponentRenderer.js">
+      <PhysicalRelativePath>src\aura\jobAdvertisementComponent\jobAdvertisementComponentRenderer.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisementComponent</BundleName>
+      <LightningType>Renderer</LightningType>
+    </Compile>
+    <Compile Include="aura\JobAdvertisementsApplication\JobAdvertisementsApplication.app">
+      <PhysicalRelativePath>src\aura\JobAdvertisementsApplication\JobAdvertisementsApplication.app</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>JobAdvertisementsApplication</BundleName>
+      <LightningType>Application</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisements.cmp">
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisements.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisements.css">
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisements.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisementsController.js">
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisementsController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisementsHelper.js">
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisementsHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\modalWindow\modalWindow.cmp">
+      <PhysicalRelativePath>src\aura\modalWindow\modalWindow.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>modalWindow</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\modalWindow\modalWindowController.js">
+      <PhysicalRelativePath>src\aura\modalWindow\modalWindowController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>modalWindow</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\ResetSearch\ResetSearch.evt">
+      <PhysicalRelativePath>src\aura\ResetSearch\ResetSearch.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>ResetSearch</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\searchRecordsComponent\searchRecordsComponent.cmp">
+      <PhysicalRelativePath>src\aura\searchRecordsComponent\searchRecordsComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>searchRecordsComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\searchRecordsComponent\searchRecordsComponent.css">
+      <PhysicalRelativePath>src\aura\searchRecordsComponent\searchRecordsComponent.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>searchRecordsComponent</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\searchRecordsComponent\searchRecordsComponentController.js">
+      <PhysicalRelativePath>src\aura\searchRecordsComponent\searchRecordsComponentController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>searchRecordsComponent</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\SearchRecords\SearchRecords.evt">
+      <PhysicalRelativePath>src\aura\SearchRecords\SearchRecords.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>SearchRecords</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.cmp">
+      <PhysicalRelativePath>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selectedJobAdvertisementComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.css">
+      <PhysicalRelativePath>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selectedJobAdvertisementComponent</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponentController.js">
+      <PhysicalRelativePath>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponentController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selectedJobAdvertisementComponent</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\SelectJob\SelectJob.evt">
+      <PhysicalRelativePath>src\aura\SelectJob\SelectJob.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>SelectJob</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="classes\AssetImage.cls">
+      <PhysicalRelativePath>src\classes\AssetImage.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordController.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ExampleController.cls">
+      <PhysicalRelativePath>src\classes\ExampleController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\InsertCandidateCV.cls">
+      <PhysicalRelativePath>src\classes\InsertCandidateCV.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\JobAdvertisementPageControllerTest.cls">
+      <PhysicalRelativePath>src\classes\JobAdvertisementPageControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\JobAdvertisementPageForSiteController.cls">
+      <PhysicalRelativePath>src\classes\JobAdvertisementPageForSiteController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\JobAdvertisementsController.cls">
+      <PhysicalRelativePath>src\classes\JobAdvertisementsController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ListOfJobAdvertisementController.cls">
+      <PhysicalRelativePath>src\classes\ListOfJobAdvertisementController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ListOfJobAdvertisementControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ListOfJobAdvertisementControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageController.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageControllerTest.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\RestRecourceForGetCountOfRecords.cls">
+      <PhysicalRelativePath>src\classes\RestRecourceForGetCountOfRecords.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\RestRecourceForJobAdvertisements.cls">
+      <PhysicalRelativePath>src\classes\RestRecourceForJobAdvertisements.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\RestResourceForGetImage.cls">
+      <PhysicalRelativePath>src\classes\RestResourceForGetImage.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\RestResourceForJobAdvertisementsTest.cls">
+      <PhysicalRelativePath>src\classes\RestResourceForJobAdvertisementsTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginController.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterController.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\TestDataFactory.cls">
+      <PhysicalRelativePath>src\classes\TestDataFactory.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\TestEndpointForGetImage.cls">
+      <PhysicalRelativePath>src\classes\TestEndpointForGetImage.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\TestForDeleteSelectedJobsTrigger.cls">
+      <PhysicalRelativePath>src\classes\TestForDeleteSelectedJobsTrigger.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\TestForGetCountsOfRecordsEndpoint.cls">
+      <PhysicalRelativePath>src\classes\TestForGetCountsOfRecordsEndpoint.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="components\SiteFooter.component">
+      <PhysicalRelativePath>src\components\SiteFooter.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteHeader.component">
+      <PhysicalRelativePath>src\components\SiteHeader.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteLogin.component">
+      <PhysicalRelativePath>src\components\SiteLogin.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SitePoweredBy.component">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pages\AnswersHome.page">
+      <PhysicalRelativePath>src\pages\AnswersHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\BandwidthExceeded.page">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CandidateCV.page">
+      <PhysicalRelativePath>src\pages\CandidateCV.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ChangePassword.page">
+      <PhysicalRelativePath>src\pages\ChangePassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\example.page">
+      <PhysicalRelativePath>src\pages\example.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Exception.page">
+      <PhysicalRelativePath>src\pages\Exception.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\FileNotFound.page">
+      <PhysicalRelativePath>src\pages\FileNotFound.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPassword.page">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPasswordConfirm.page">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\IdeasHome.page">
+      <PhysicalRelativePath>src\pages\IdeasHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\InMaintenance.page">
+      <PhysicalRelativePath>src\pages\InMaintenance.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\JobAdvertisementPageForSite.page">
+      <PhysicalRelativePath>src\pages\JobAdvertisementPageForSite.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ListOfJobAdvertsements.page">
+      <PhysicalRelativePath>src\pages\ListOfJobAdvertsements.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\MyProfilePage.page">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteLogin.page">
+      <PhysicalRelativePath>src\pages\SiteLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegister.page">
+      <PhysicalRelativePath>src\pages\SiteRegister.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegisterConfirm.page">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteTemplate.page">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\StdExceptionTemplate.page">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Unauthorized.page">
+      <PhysicalRelativePath>src\pages\Unauthorized.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\UnderConstruction.page">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="triggers\triggerForDeleteSelectedJobs.trigger">
+      <PhysicalRelativePath>src\triggers\triggerForDeleteSelectedJobs.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountCleanInfo.object">
+      <PhysicalRelativePath>src\objects\AccountCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssetRelationship.object">
+      <PhysicalRelativePath>src\objects\AssetRelationship.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CandidateCV__c.object">
+      <PhysicalRelativePath>src\objects\CandidateCV__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChatterActivity.object">
+      <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroup.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroup.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroupMember.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroupMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactCleanInfo.object">
+      <PhysicalRelativePath>src\objects\ContactCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DandBCompany.object">
+      <PhysicalRelativePath>src\objects\DandBCompany.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Job_Advertisement__c.object">
+      <PhysicalRelativePath>src\objects\Job_Advertisement__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LeadCleanInfo.object">
+      <PhysicalRelativePath>src\objects\LeadCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgDeleteRequest.object">
+      <PhysicalRelativePath>src\objects\OrgDeleteRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordAction.object">
+      <PhysicalRelativePath>src\objects\RecordAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RequestsForAccessSIQ.object">
+      <PhysicalRelativePath>src\objects\RequestsForAccessSIQ.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Scorecard.object">
+      <PhysicalRelativePath>src\objects\Scorecard.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardAssociation.object">
+      <PhysicalRelativePath>src\objects\ScorecardAssociation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardMetric.object">
+      <PhysicalRelativePath>src\objects\ScorecardMetric.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Selected_Job__c.object">
+      <PhysicalRelativePath>src\objects\Selected_Job__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamActivityAccess.object">
+      <PhysicalRelativePath>src\objects\StreamActivityAccess.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Topic.object">
+      <PhysicalRelativePath>src\objects\Topic.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TopicAssignment.object">
+      <PhysicalRelativePath>src\objects\TopicAssignment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZip Include="staticresources\datePicker">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+    <StaticZip Include="staticresources\siteMainPage">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+    <StaticZip Include="staticresources\SiteSamples">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+    <StaticZip Include="staticresources\TWS_Sync_Data">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+  </ItemGroup>
+  <ItemGroup>
+    <Static Include="staticresources\jQuery.resource">
+      <PhysicalRelativePath>resource-bundles\jQuery.resource</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+    </Static>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\.DS_Store">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\.DS_Store</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\.DS_Store</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\js\jquery-ui.js">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\js\jquery-ui.js</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\js\jquery-ui.js</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\styles\.DS_Store">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\styles\.DS_Store</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\styles\.DS_Store</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\styles\images\ui-icons_444444_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\styles\images\ui-icons_444444_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\styles\images\ui-icons_444444_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\styles\images\ui-icons_555555_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\styles\images\ui-icons_555555_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\styles\images\ui-icons_555555_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\styles\images\ui-icons_777777_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\styles\images\ui-icons_777777_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\styles\images\ui-icons_777777_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\datePicker\styles\jquery-ui.css">
+      <PhysicalRelativePath>resource-bundles\datePicker\datePicker\styles\jquery-ui.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\datePicker\styles\jquery-ui.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\._datePicker">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\._datePicker</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\._datePicker</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\._.DS_Store">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\._.DS_Store</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\._.DS_Store</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\._js">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\._js</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\._js</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\._styles">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\._styles</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\._styles</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\js\._jquery-ui.js">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\js\._jquery-ui.js</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\js\._jquery-ui.js</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\._.DS_Store">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\._.DS_Store</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\._.DS_Store</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\._images">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\._images</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\._images</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\._jquery-ui.css">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\._jquery-ui.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\._jquery-ui.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_444444_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_444444_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_444444_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_555555_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_555555_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_555555_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_777777_256x240.png">
+      <PhysicalRelativePath>resource-bundles\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_777777_256x240.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>datePicker</StaticResource>
+      <StaticResourcePath>staticresources\datePicker\__MACOSX\datePicker\styles\images\._ui-icons_777777_256x240.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\images\arrow.png">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\images\arrow.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\images\arrow.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\images\arrowUp.png">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\images\arrowUp.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\images\arrowUp.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\images\dialog_close.png">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\images\dialog_close.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\images\dialog_close.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\js\siteMainPage\js\simplebar.js">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\js\siteMainPage\js\simplebar.js</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\js\siteMainPage\js\simplebar.js</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\js\siteMainPage\js\siteMainPage.js">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\js\siteMainPage\js\siteMainPage.js</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\js\siteMainPage\js\siteMainPage.js</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\styles\simplebar.css">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\styles\simplebar.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\styles\simplebar.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\siteMainPage\siteMainPage\styles\styles.css">
+      <PhysicalRelativePath>resource-bundles\siteMainPage\siteMainPage\styles\styles.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>siteMainPage</StaticResource>
+      <StaticResourcePath>staticresources\siteMainPage\siteMainPage\styles\styles.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\clock.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\clock.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\clock.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\construction.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\construction.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\construction.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\force_logo.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\force_logo.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\force_logo.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\maintenance.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\maintenance.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\maintenance.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\poweredby.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\poweredby.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\poweredby.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\tools.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\tools.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\tools.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\unauthorized.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\unauthorized.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\unauthorized.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\warning.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\warning.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\warning.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\SiteStyles.css">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\SiteStyles.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\SiteStyles.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd">
+      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data\TWS_Sync_Data.twssd</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>TWS_Sync_Data</StaticResource>
+      <StaticResourcePath>staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd</StaticResourcePath>
+    </StaticZipItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\AssetImage.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\AssetImage.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\AssetImage.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\ExampleController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ExampleController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ExampleController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\InsertCandidateCV.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\InsertCandidateCV.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\InsertCandidateCV.cls</DependentUpon>
+    </None>
+    <None Include="classes\JobAdvertisementPageControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\JobAdvertisementPageControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\JobAdvertisementPageControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\JobAdvertisementPageForSiteController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\JobAdvertisementPageForSiteController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\JobAdvertisementPageForSiteController.cls</DependentUpon>
+    </None>
+    <None Include="classes\JobAdvertisementsController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\JobAdvertisementsController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\JobAdvertisementsController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ListOfJobAdvertisementController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ListOfJobAdvertisementController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ListOfJobAdvertisementController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ListOfJobAdvertisementControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ListOfJobAdvertisementControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ListOfJobAdvertisementControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageController.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\RestRecourceForGetCountOfRecords.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\RestRecourceForGetCountOfRecords.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\RestRecourceForGetCountOfRecords.cls</DependentUpon>
+    </None>
+    <None Include="classes\RestRecourceForJobAdvertisements.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\RestRecourceForJobAdvertisements.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\RestRecourceForJobAdvertisements.cls</DependentUpon>
+    </None>
+    <None Include="classes\RestResourceForGetImage.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\RestResourceForGetImage.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\RestResourceForGetImage.cls</DependentUpon>
+    </None>
+    <None Include="classes\RestResourceForJobAdvertisementsTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\RestResourceForJobAdvertisementsTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\RestResourceForJobAdvertisementsTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestDataFactory.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TestDataFactory.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TestDataFactory.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestEndpointForGetImage.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TestEndpointForGetImage.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TestEndpointForGetImage.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestForDeleteSelectedJobsTrigger.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TestForDeleteSelectedJobsTrigger.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TestForDeleteSelectedJobsTrigger.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestForGetCountsOfRecordsEndpoint.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TestForGetCountsOfRecordsEndpoint.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TestForGetCountsOfRecordsEndpoint.cls</DependentUpon>
+    </None>
+    <None Include="components\SiteFooter.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteFooter.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteFooter.component</DependentUpon>
+    </None>
+    <None Include="components\SiteHeader.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteHeader.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteHeader.component</DependentUpon>
+    </None>
+    <None Include="components\SiteLogin.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteLogin.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteLogin.component</DependentUpon>
+    </None>
+    <None Include="components\SitePoweredBy.component-meta.xml">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SitePoweredBy.component</DependentUpon>
+    </None>
+    <None Include="pages\AnswersHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\AnswersHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\AnswersHome.page</DependentUpon>
+    </None>
+    <None Include="pages\BandwidthExceeded.page-meta.xml">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\BandwidthExceeded.page</DependentUpon>
+    </None>
+    <None Include="pages\CandidateCV.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CandidateCV.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CandidateCV.page</DependentUpon>
+    </None>
+    <None Include="pages\ChangePassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChangePassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\example.page-meta.xml">
+      <PhysicalRelativePath>src\pages\example.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\example.page</DependentUpon>
+    </None>
+    <None Include="pages\Exception.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Exception.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Exception.page</DependentUpon>
+    </None>
+    <None Include="pages\FileNotFound.page-meta.xml">
+      <PhysicalRelativePath>src\pages\FileNotFound.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\FileNotFound.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPasswordConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPasswordConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\IdeasHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\IdeasHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\IdeasHome.page</DependentUpon>
+    </None>
+    <None Include="pages\InMaintenance.page-meta.xml">
+      <PhysicalRelativePath>src\pages\InMaintenance.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\InMaintenance.page</DependentUpon>
+    </None>
+    <None Include="pages\JobAdvertisementPageForSite.page-meta.xml">
+      <PhysicalRelativePath>src\pages\JobAdvertisementPageForSite.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\JobAdvertisementPageForSite.page</DependentUpon>
+    </None>
+    <None Include="pages\ListOfJobAdvertsements.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ListOfJobAdvertsements.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ListOfJobAdvertsements.page</DependentUpon>
+    </None>
+    <None Include="pages\MyProfilePage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\MyProfilePage.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegister.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegister.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegister.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegisterConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegisterConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\StdExceptionTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\StdExceptionTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\Unauthorized.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Unauthorized.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Unauthorized.page</DependentUpon>
+    </None>
+    <None Include="pages\UnderConstruction.page-meta.xml">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\UnderConstruction.page</DependentUpon>
+    </None>
+    <None Include="triggers\triggerForDeleteSelectedJobs.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\triggerForDeleteSelectedJobs.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>triggers\triggerForDeleteSelectedJobs.trigger</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

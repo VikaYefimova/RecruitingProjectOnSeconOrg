@@ -1,0 +1,44 @@
+<aura:component controller="InsertCandidateCV">
+    <aura:attribute name="candidateStatus" type="String" />
+    <aura:attribute name="selectedJobs" type="Job_Advertisement__c[]" />
+    <aura:attribute name="image" type="String" />
+    <aura:registerEvent name="closeWindow" type="c:closeModalWindow"/>
+	<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              size="medium"
+                                              class="slds-modal__close"/>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Candidate CV</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <lightning:layout>
+                    <lightning:layoutItem size="6" class="left-align">
+                        <lightning:input aura:id="fullName" type="text" label="" placeholder="Full Name"/>
+                        <lightning:input aura:id="age" type="number" label="" placeholder="Age"/>
+                        <lightning:input aura:id="salary" type="text" label="" placeholder="Salary"/>
+                        <lightning:select aura:id="status" name="selectStatus" label="" required="false" value="{!v.candidateStatus}" onchange="{!c.handleCandidateStatusChange}">
+                            <option value="Unemployed">Unemployed</option>
+                            <option value="Employed">Employed</option>
+                        </lightning:select>
+                        <lightning:input aura:id="phone" type="text" label="" placeholder="Phone"/>
+                        <lightning:input aura:id="email" type="text" label="" placeholder="Email"/>
+                        <ui:inputTextArea aura:id="comments" label="" class="textarea-info" value="" rows="5" resizable="true" placeholder="Additional Info"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6" class="slds-m-left_medium">
+                        <lightning:input aura:id="candidateImage" type="file" name="fileUploader" label="" multiple="false" accept="image/png, image/jpeg" onchange="{!c.handleFileChanges}"/>
+                        <img name="image" class="image-preview" aura:id="imagePreview"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            <footer class="slds-modal__footer">
+                <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{! c.closeModel }"/>
+                <lightning:button variant="brand" label="Send CV" title="Send" onclick="{! c.sendCV }"/>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>  
+</aura:component>

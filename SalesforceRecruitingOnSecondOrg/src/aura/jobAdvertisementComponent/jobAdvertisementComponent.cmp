@@ -1,0 +1,60 @@
+<aura:component controller="JobAdvertisementsController">
+	<aura:attribute name="job" type="Job_Advertisement__c"/>
+    <aura:attribute name="jobs" type="Object[]"/>
+    <aura:attribute name="selectedJobs" type="Object[]" />
+    <aura:handler name="change" value="{!v.selectedJobs}" action="{!c.selectedJobsChange}"/>
+    <aura:registerEvent name="SelectJobEvent" type="c:SelectJob"/>
+    <aura:registerEvent name="DeselectJobEvent" type="c:DeselectJob"/>
+    <lightning:card  title="{!'Vacancy title: '+ v.job.Name}">
+        <div class="slds-m-left_medium">
+        	<span> Salary Range: </span>
+        	<lightning:formattedText value="{!v.job.Salary__c}"/>
+    	</div>
+        
+        <div class="slds-m-left_medium" aura:id="mainPart">
+            <lightning:layout>
+                <lightning:layoutItem size="11" class="left-align">
+                    <span> Location: </span>
+                    <lightning:formattedText value="{!v.job.Location__c}"/>
+                </lightning:layoutItem>
+                    <div class="right-align slds-size_1-of-12">
+                        <lightning:buttonIcon class="openDetails right-align" aura:id="buttonIcon" iconName="utility:chevrondown" size="medium" variant="bare" onclick="{! c.buttonClick }"/>
+                    </div>
+            </lightning:layout>
+    	</div>
+        <div aura:id="childPart" class="slds-m-left_medium slds-m-right_medium slds-hide child-panel">
+            <div class="slds-m-top_x-small">
+                <span> Education: </span>
+                <lightning:formattedText value="{!v.job.Education__c}"/>
+            </div>
+            <div>
+                <span> Description: </span>
+                <lightning:formattedText value="{!v.job.Description__c}"/>
+            </div>
+            <div>
+                <span> Skills required: </span>
+                <lightning:formattedText value="{!v.job.Skills_Required__c}"/>
+            </div>
+            <div>
+                <span> Manager name: </span>
+                <lightning:formattedText value="{!v.job.Manager_name__c}"/>
+            </div>
+            <div>
+                <span> Manager phone: </span>
+                <lightning:formattedText value="{!v.job.Phone__c}"/>
+            </div>
+            <lightning:layout>
+                <lightning:layoutItem size="11" class="left-align">
+                    <div>
+                        <span> Manager email: </span>
+                        <lightning:formattedText value="{!v.job.Email__c}"/>
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1" class="right-align">
+                    <lightning:button label="Select" aura:id="buttonSelectJob" onclick="{!c.selectJob}" class="selectButton"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>    
+    </lightning:card>
+	
+</aura:component>

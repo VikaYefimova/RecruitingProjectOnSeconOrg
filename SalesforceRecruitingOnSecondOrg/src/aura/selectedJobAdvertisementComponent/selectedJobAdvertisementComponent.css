@@ -1,0 +1,10 @@
+.THIS .slds-card__header.slds-grid{
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.THIS .slds-text-heading_small{
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    max-width:15%;
+}

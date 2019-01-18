@@ -1,0 +1,40 @@
+<aura:component >
+    <aura:attribute name="publishDate" type="Date"/>
+    <aura:attribute name="dateOperator" type="String"/>
+    <aura:attribute name="salary" type="String"/>
+    <aura:registerEvent name="searchRecordsEvent" type="c:SearchRecords"/>
+    <aura:registerEvent name="resetSearchResults" type="c:ResetSearch"/>
+    <div class="slds-m-bottom_x-small">
+            <lightning:layout verticalAlign="end">
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:input aura:id="fullName" type="text" label="" placeholder="Full Name"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                	<lightning:select aura:id="operator" name="selectItem" label="" value="{!v.dateOperator}" onchange="{!c.doOnChangeOperator}">
+                        <option value="">-choose operator-</option>
+                        <option value="before">before</option>
+                        <option value="after">after</option>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:input aura:id="fieldDate" type="date" placeholder="Publish Date" label="" value="{!v.publishDate}" onblur="{!c.checkValidity}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                	<lightning:select aura:id="salaryRange" name="selectItem" label="" value="{!v.salary}" onchange="{!c.doOnChangeSalary}">
+                        <option value="">-none-</option>
+                        <option value="50K-75K">50K-75K</option>
+                        <option value="75K-90K">75K-90K</option>
+                        <option value="90K-120K">90K-120K</option>
+                        <option value="120K+">120K+</option>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:layoutItem class="slds-m-left_x-small button-group">
+                    <lightning:buttonGroup>
+                		<lightning:button label="Search" class="search-button" aura:id="buttonSearchJobs" onclick="{!c.searchRecods}" />
+                		<lightning:button label="Reset" class="reset-button" aura:id="buttonResetSearch" onclick="{!c.resetResults}" />
+                    </lightning:buttonGroup>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    
+</aura:component>

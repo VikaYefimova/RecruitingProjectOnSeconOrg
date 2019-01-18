@@ -1,0 +1,863 @@
+<apex:page controller="JobAdvertisementPageForSiteController" docType="html-5.0" standardStylesheets="false" title="Job advertisements" showHeader="false" cache="false">
+    <apex:includeScript value="{! $Resource.jQuery }"/>
+    <apex:stylesheet value="{!URLFOR($Resource.datePicker,'datePicker/styles/jquery-ui.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.datePicker,'/datePicker/js/jquery-ui.js')}"/>
+    <!--<apex:stylesheet value="{!URLFOR($Resource.siteMainPage,'siteMainPage/styles/styles.css')}"/>-->
+    
+    <script>
+    	var h_hght = 94; // высота шапки
+		var h_mrg = 0;
+    	var selectedJobIdArray = [];
+    	function openDetail(e){
+            if($('.detail', e.closest('.job')).is(":visible")){
+                $(e).prop("src", "{!URLFOR($Resource.siteMainPage,'siteMainPage/images/arrow.png')}");
+                $(e.closest('.short')).removeClass("openDetail");
+                    
+            }
+            else{
+                $(e).prop("src", "{!URLFOR($Resource.siteMainPage,'siteMainPage/images/arrowUp.png')}");
+                $(e.closest('.short')).toggleClass("openDetail");
+                    
+            }
+            $('.detail', e.closest('.job')).toggle();
+            $(".mainPartRightPanel").attr("style", "min-height:"+$(".jobs").height()+"px; position: relative;");
+        }
+    	function selectJob(e){
+        		var job = e.closest('.job');
+                var name = $('.short .informationFirst', job).text();
+                var salary = $('.short .information', job).text();
+                var location = $('.short .informationLast', job).text();
+                var jobId = $(job).data("jobid");
+                if($(e).text() == 'Select'){
+                    $(e).text('Deselect');
+                    $(".notFixedSelectedJobs").append("<div data-jobId='" + jobId + "' class='selectedJob'><div class='deleteLink'><img class='deleteSelected' src='{!URLFOR($Resource.siteMainPage,'siteMainPage/images/dialog_close.png')}'></img></div><div class='selectedJobName'>" + name + "</div><div>" + salary + "</div> <div>" + location + "</div></div>");
+                    $(".mainPartRightPanel").attr("style", "min-height:"+$(".jobs").height()+"px; position: relative;");
+                    var selectedJobCount = $(".selectedJobCount").text();
+                    selectedJobCount++;
+                    $(".selectedJobCount").text(('0' + selectedJobCount).slice(-2));
+                    selectedJobIdArray.push(jobId);
+                    if(selectedJobIdArray.length == 1){
+                    	$('.applyButton').removeAttr("disabled");
+                    }
+                }
+                else{
+                    var selectedJob = $(" [data-jobid='" + jobId +"'].selectedJob");
+                    var selectedJobId = $(selectedJob).data("jobid");
+                    $(e).text('Select');
+                    $(selectedJob).remove();
+                    var selectedJobCount = $(".selectedJobCount").text();
+                	selectedJobCount--;
+                    $(".selectedJobCount").text(('0' + selectedJobCount).slice(-2));
+                    deleteSelectedJobId(selectedJobId);
+                    var index = selectedJobIdArray.indexOf(selectedJobId);
+					if (index !== -1) selectedJobIdArray.splice(index, 1);
+                    if(selectedJobIdArray.length == 0){
+                    	$('.applyButton').attr("disabled", "disabled");
+                    }
+                }
+                
+                $(" [data-jobid='" + jobId +"'] .deleteSelected").on("click", function(e){
+                    var selectedJob = e.target.closest('.selectedJob');
+                    var selectedJobId = $(selectedJob).data("jobid");
+                    var varam2 = selectedJobId;
+                    var forChangeText = $(" [data-jobid='" + selectedJobId +"'] .selectJob");
+                    $(forChangeText).text('Select');
+                    $(selectedJob).remove();
+                    var selectedJobCount = $(".selectedJobCount").text();
+                	selectedJobCount--;
+                    $(".selectedJobCount").text(('0' + selectedJobCount).slice(-2));
+                    deleteSelectedJobId(varam2);
+                    var index = selectedJobIdArray.indexOf(selectedJobId);
+					if (index !== -1) selectedJobIdArray.splice(index, 1);
+                    if(selectedJobIdArray.length == 0){
+                    	$('.applyButton').attr("disabled", "disabled");
+                    }
+                })
+        }
+    function searchRecords(){
+        var dateForSearch = $(".datepicker").datepicker({ dateFormat: 'dd,MM,yyyy' }).val();
+        if(($(".name").val()=="")&&($(".date").val()=="" || $(".dateOperator").val()=="")&&($(".salaryRange").val()=="")){
+        	alert("You haven't enter any criterias for search.");
+            return null;
+        }
+
+        	search(dateForSearch);
+        
+    }
+    function makeEmtyStringIfNull(){
+    	var names = $("span.name");
+        var salaries = $("span.salary");
+        var locations = $("span.location");
+        var descriptions = $("span.description");
+        var educations = $("span.education");
+        var skills = $("span.skills");
+        var managers = $("span.manager");
+        var phones = $("span.phone");
+        var emails = $("span.email");
+        for(var i=0; i<names.length; i++){
+        	if($(names[i]).text() == "null"){
+            	$(names[i]).text("  ");
+            }
+        }
+    	for(var i=0; i<salaries.length; i++){
+        	if($(salaries[i]).text() == "null"){
+            	$(salaries[i]).text("  ");
+            }
+        }
+        for(var i=0; i<locations.length; i++){
+        	if($(locations[i]).text() == "null"){
+            	$(locations[i]).text("  ");
+            }
+        }
+        for(var i=0; i<descriptions.length; i++){
+        	if($(descriptions[i]).text() == "null"){
+            	$(descriptions[i]).text("  ");
+            }
+        }
+        for(var i=0; i<educations.length; i++){
+        	if($(educations[i]).text() == "null"){
+            	$(educations[i]).text("  ");
+            }
+        }
+        for(var i=0; i<skills.length; i++){
+        	if($(skills[i]).text() == "null"){
+            	$(skills[i]).text("  ");
+            }
+        }
+        for(var i=0; i<managers.length; i++){
+        	if($(managers[i]).text() == "null"){
+            	$(managers[i]).text("  ");
+            }
+        }
+        for(var i=0; i<phones.length; i++){
+        	if($(phones[i]).text() == "null"){
+            	$(phones[i]).text("  ");
+            }
+        }
+        for(var i=0; i<emails.length; i++){
+        	if($(emails[i]).text() == "null"){
+            	$(emails[i]).text("  ");
+            }
+        }
+    }
+    function onRerenderForm(){
+    	var buttons = $(".selectJob");
+        for(var i=0; i<buttons.length; i++){
+            var jobId = $(buttons[i]).parent().parent().data("jobid");
+            for(var j=0; j<selectedJobIdArray.length; j++){
+            	if(selectedJobIdArray[j] == jobId){
+                    $(buttons[i]).text("Deselect");
+                }
+            }
+        }
+        makeEmtyStringIfNull();
+    }
+    function sendCV(){
+    	var name = $(".candidateName").val();
+        var age =$(".candidateAge").val();
+        var salary = $(".candidatesalary").val();
+        var status = $(".candidateStatus").val();
+        var phone = $(".candidatePhone").val();
+        var email = $(".candidateEmail").val();
+        var info = $(".candidateInfo").val();
+        var photo = $(".photo")[0].files[0];
+        if(name == ""|| age =="" || salary =="" || phone== "" || email == ""){
+            $(".messageForm").append("<ul role='alert' class='message'><li>Name, Salary, Phone, Email is required fields!</li></ul>");
+            if(photo == null){
+            	$(".message li").text( $(".message li").text() + " You can't send CV without photo!");
+            }
+            return null;
+        }
+        if(photo == null){
+            $(".message li").text(" You can't send CV without photo!");
+        }
+        else if(photo != null ){
+            if(name != "" && age !="" && salary !="" && phone != "" && email != ""){
+                var uploadFileSize = photo.size;
+                if (uploadFileSize > 131072) {
+                    alert('File uploads must be less than 128KB in size. Your file size is: ' + (Math.round(uploadFileSize/1024)) + 'KB');
+                }
+                else {
+                    var stringImage;
+                    var reader = new FileReader();
+                    reader.readAsDataURL(photo);
+                    reader.onloadend = function() {
+                        base64data = reader.result;
+                        stringImage = base64data;
+                        console.log(stringImage);
+                        sendCandidateCV(name, age, salary, status, phone, email, info, stringImage);
+                        setTimeout( function () { 
+                            $('#dialog').dialog('close'); 
+                            }, 2000 // milliseconds delay
+                        );
+                    }
+                }
+            }
+        }
+    }
+        $( function() {
+            var elem = $('.leftTopPanel');
+            var elem2 = $('.rightTopPanel');
+            var elem3 = $('.centerTopPanel');
+            var elem4 = $('.selectedJobs')
+            var top = $(this).scrollTop();
+             
+            if(top > h_hght){
+                elem.css('top', h_mrg);
+                elem2.css('top', h_mrg);
+                elem3.css('top', h_mrg);
+                elem4.css('top', (h_mrg+39.5));
+                elem4.css('height', '75%');
+            }           
+            
+            $(window).scroll(function(){
+                top = $(this).scrollTop();
+                 
+                if (top+h_mrg < h_hght) {
+                    elem.css('top', (h_hght-top));
+                    elem2.css('top', (h_hght-top));
+                	elem3.css('top', (h_hght-top));
+                    elem4.css('top', ((h_hght+39.5)-top));
+                    elem4.css('height', '75%');
+                } else {
+                    elem.css('top', h_mrg);
+                    elem2.css('top', h_mrg);
+                	elem3.css('top', h_mrg);
+                    elem4.css('top', (h_mrg+39.5));
+                    elem4.css('height', '82.5%');
+                }
+            });
+            makeEmtyStringIfNull();
+            var selectedJobCount = $(".selectedJobCount").text();
+            if(selectedJobIdArray.length <= 0){
+            	$('.applyButton').attr('disabled', 'disabled');
+            }
+            $( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+            $(".clearButton").click(function(){
+                $(".name").val("");
+                $(".date").val("");
+                $(".dateOperator").val("");
+                $(".salaryRange").val("");
+            });
+
+            $("#dialog").dialog({ autoOpen: false, modal: true,resizable: true, height: 700, width: 600 });
+    
+            $(".applyButton").click(function () {
+                $("#dialog").dialog('open');
+            });
+            $(".photo").on("change", function(e){
+            var $input = $(this);
+            var inputFiles = this.files;
+            if(inputFiles == undefined || inputFiles.length == 0) return;
+            var inputFile = inputFiles[0];
+        
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                $input.next().attr("src", event.target.result);
+                $('.preview').attr("src", event.target.result);
+            };
+            reader.onerror = function(event) {
+                alert("ERROR: " + event.target.error.code);
+            };
+            reader.readAsDataURL(inputFile);
+        	});
+            
+            $(".mainPartRightPanel").attr("style", "min-height:"+$(".jobs").height()+"px; position: relative;")
+        });
+    </script>
+    <style>
+        .noSidebarCell{
+        	padding: 0px;
+        }
+        .bodyDiv{
+        	position: relative;
+        	-webkit-box-shadow: none;
+        	box-shadow: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body #AppBodyHeader .phHeaderCustomLogo{
+        	display: none;
+        }
+        body.sfdcBody{
+        	margin: 0px;
+        	background-color: white;
+        }
+        .homeTab .brdPalette{
+        	border-width: 0px;
+        }
+        body .bPageFooter a, body .bPageFooter{
+        	padding: 0px;
+        }
+        body{
+        	margin: 0px;
+        }
+        html body .header {
+            padding: 30px 0;
+            background-color: grey;
+            color: yellow ;
+            text-align: center;
+            font-size: 30px;
+        	margin: 0px;
+        	width: 100%;
+        }
+        html body .div {
+            width: 100%;
+            margin: 0px;
+        }
+        
+        html body .leftTopPanel{
+        	top: 94px;
+            width: 25%;
+            float: left;
+            position: fixed;
+            min-height: 39.5px;
+            background-color: white;
+        }
+        
+        html body .rightTopPanel{
+        	top: 94px;
+            width: 25%;
+            float: left;
+            position: fixed;
+            left: 75%;
+            background-color: white;
+            min-height: 39.5px;
+        }
+        
+        html body .centerTopPanel{
+        	top: 94px;
+            width: 50%;
+            float: left;
+            position: fixed;
+            left: 25%;
+            background-color: white;
+            min-height: 39.5px;
+        }
+        
+        html body .selectedCount{
+        	float: left;
+        }
+        html body .searchBlock{
+        	width: 100%;
+        	float: left;
+        }
+        html body .mainPartLeftPanel{
+        	width: 25%;
+        clear: left;
+            float: left;
+        }
+        html body .mainPartRightPanel{
+        	width: 25%;
+            float: left;
+        }
+        html body .jobs{
+            width: 50%;
+            float: left;
+        }
+        html body .name {
+            height: 35px;
+            border-radius: 5px 0 0 5px;
+            border-color: #e1e4e8;
+            border-style: solid;
+            border-width: 1px;
+            width: 27%;
+            padding: 0px;
+        }
+        html body .date {
+            height: 35px;
+        	border-color: #e1e4e8;
+            border-style: solid;
+        	border-width: 1px;
+        	width: 15%;
+        	padding: 0px;
+        }
+        html body .dateOperator {
+        	height: 37px;
+        	border-color: #e1e4e8;
+            border-style: solid;
+        	border-width: 1px;
+        	width: 15%;
+        }
+        html body .salaryRange {
+            height: 37px;
+            border-color: #e1e4e8;
+            border-style: solid;
+            border-width: 1px;
+            width: 15.5%;
+        }
+        html body .buttonSearch {
+            height: 38px;
+            width: 13.5%;
+            background-color: orange;
+            border-radius: 0000;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-image: none;
+            margin: 0px;
+            padding: 0px;
+            border-right-color: orange;
+            border-left-color: orange;
+            border-top-color: orange;
+            border-bottom-color: orange;
+        }
+        html body .short{
+            background-color: white;
+            border-color: #e1e4e8;
+            border-style: solid;
+        	border-width: 1px;
+            padding: 5px 5px 20px 5px;
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+        html body .detail{
+            height: auto;
+            background-color: #f9d28a4f;
+            border-style: solid;
+        	border-width: 1px;
+        	border-color: #fdf1dc;
+            border-radius: 0 0 5px 5px;
+            padding: 5px 5px 23px 5px;
+            display:none;
+        }
+        
+        html body .informationFirst {
+        	font-weight: bold;
+        }
+        
+        html body .informationLast{
+            width: 80%;
+            float: left;
+        	font-weight: normal;
+        }
+        html body .information{
+        	font-weight: normal;
+        }
+        html body .openDetail{
+            border-radius: 5px 5px 0 0;
+            border-bottom-style: none;
+        }
+        html body .selectJob{
+        	border-radius: 5px;
+        	border-style: solid;
+        	border-width: 1px;
+        	border-color: orange;
+        	background-color: orange;
+        	color: white;
+        	margin-bottom: 2px;
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        html body .circle-width-text {
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          background-color: orange;
+          text-align: center;
+          display: flex;
+          float: left;
+          height: 37px;
+          width: 37px;
+          font-size: 14px;
+          font-weight: bold;
+          color: white;
+        }
+        html body .selectedJobCountLabel {
+        	float: left;
+        	margin-top: 10px;
+        	margin-left: 20px;
+        	margin-right: 10px;
+        }
+        html body .applyButton{
+        	float: right;
+        	margin-left: 10px;
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            height: 20px;
+            width: auto;
+            background-color: orange;
+        	border-color: orange;
+            border-style: solid;
+            border-width: 1px;
+        	border-color: orange;
+        	
+        	background-image: none;
+        	padding-top: 2px;
+        }
+        html body .clearButton{
+        	height: 38px;
+            width: 13%;
+            background-color: orange;
+            border-radius: 0 5px 5px 0;
+            border-style: solid;
+            border-width: 1px;
+            border-color: orange;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-image: none;
+            margin: 0px;
+            padding: 0px;
+            border-right-color: #e0e4e8;
+        }
+        html body .selectedJob{
+        	margin-left: 20px;
+        	width: 45%;
+        	background-color: white;
+            border-color: #e1e4e8;
+            border-style: solid;
+        	border-width: 1px;
+            padding: 5px 5px 10px 5px;
+            border-radius: 5px;
+            margin-bottom: 3px;
+        }
+        html body .selectedJobs{
+            position: fixed;
+        	width: 24%;
+        	top: 133.5px;
+        	min-height: 75%;
+        	
+        }
+        html body .notFixedSelectedJobs{
+            overflow: scroll;
+        	overflow-y: auto;
+            overflow-x: hidden;
+        	height: 100%;
+        }
+        html body .notFixedSelectedJobs::-webkit-scrollbar {
+            width: 1em;
+        }
+         
+        html body .notFixedSelectedJobs::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+         
+        html body .notFixedSelectedJobs::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          outline: 1px solid slategrey;
+        }
+        
+        html body .deleteLink{
+        	width: 100%;
+        	margin-bottom: 7px;
+        }
+        html body .deleteSelected{
+        	float: right;
+        	height: 10px;
+        	width: 10px;
+        	cursor: pointer;
+        }
+        html body .selectedJobName{
+        	width: 75%;
+        	font-weight: bold;
+        }
+        html body ul{
+            padding: 0px;
+        	background-color: white;
+        	border-width: 0px;
+        margin-bottom: 15px;
+        }
+        html body li{
+            list-style-type: none;
+            min-height: 50px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            background-color: yellow;
+            font-size: 25px;
+            color: red;
+            text-align: center;
+            padding-top: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0px;
+            border-radius: 5px;
+        }
+        html body .ui-widget-header{
+        	background-color: orange;
+        	color: white;
+        }
+        html body .ui-dialog .ui-dialog-content{
+        	overflow: hidden;
+        }
+        html body .dialogWindow{
+            min-height: 639px;
+            position: relative;
+        }
+        html body .dialogSectionTitle{
+            width: 95%;
+        	font-size: 20px;
+        	background-color: #e1e4e8;
+            padding: 3px;
+        	border-radius: 5px;
+        	margin-bottom: 5px;
+        }
+        html body .dialogInformation{
+        	height: 25px;
+        	margin-bottom: 5px;
+        	margin-left: 3px;
+        	border-width: 1px;
+        	border-style: solid;
+        	border-color: #e1e4e8;
+        	border-radius: 3px;
+        }
+        html body textarea.dialogInformation{
+        	min-width: 194px;
+        	min-height: 60px;
+        }
+        html body .sendCVButton{
+        	position: absolute;
+        	bottom: 10px;
+        	left: 42%;
+        	background-color: orange;
+        	border-radius: 5px;
+        }
+        html body .CVStatus{
+        	margin-left: 3px;
+            margin-bottom: 5px;
+            width: 148px;
+            height: 27px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #e1e4e8;
+            border-radius: 3px;
+        }
+        html body .button {
+        	background-color: white;
+    		background-image: none;
+        	border-color: white;
+        }
+        html body .paginationButton{
+        	background-color: orange;
+            background-image: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-color: orange;
+            font-size: small;
+        }
+        html body .navigation{
+            position: fixed;
+            bottom: 10px;
+            left: 75%;
+            margin-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e1e4e8;
+            background-color: white;
+            border-radius: 5px;
+        }
+        html body .labelRec{
+        	margin-left: 5px;
+        margin-bottom: 3px;
+        }
+        
+        .disabledLink{
+        	pointer-events: none;
+        }
+        html body .messageForm{
+        	position: absolute;
+            top:69%;
+            left: 19%;
+            font-size: small;
+        }
+    </style>
+    <header class="header"> Job Advertisements </header>
+        <div class="div" style="position: relative;">
+            <div class="searchPanel" style="min-height: 39.5px;">
+                <apex:form id="searchForm">
+                    <div class="leftTopPanel">&nbsp;</div>
+                    <div class="centerTopPanel">
+                       <div class="searchBlock" >
+                           <apex:inputText value="{!nameOfTheVacancy}" styleclass="name" html-placeholder="Name of the Vacancy"/>
+                           <apex:selectList value="{!operator}" styleClass="dateOperator" size="1">
+                                <apex:selectOption itemLabel="--none--" itemValue=""></apex:selectOption>
+                                <apex:selectOption itemLabel="before" itemValue="<"></apex:selectOption>
+                                <apex:selectOption itemLabel="after" itemValue=">"></apex:selectOption>
+                           </apex:selectList>
+                           <apex:inputText styleClass="datepicker date"  html-placeholder="Published Date" onclick="$( '.datepicker' ).datepicker({ dateFormat: 'yy-mm-dd' });"/>
+                           <apex:selectList value="{!salaryRange}" size="1" styleClass="salaryRange">
+                                <apex:selectOption itemLabel="--Salary Range--" itemValue=""></apex:selectOption>
+                                <apex:selectOption itemLabel="50K-75K" itemValue="50K-75K"></apex:selectOption>
+                                <apex:selectOption itemLabel="75K-90K" itemValue="75K-90K"></apex:selectOption>
+                                <apex:selectOption itemLabel="90K-120K" itemValue="90K-120K"></apex:selectOption>
+                                <apex:selectOption itemLabel="120K+" itemValue="120K+"></apex:selectOption>
+                           </apex:selectList>
+                           <apex:commandButton value="Search" onclick="searchRecords();" styleClass="buttonSearch" reRender="none"/>
+                           <apex:commandButton styleclass="clearButton clear" action="{!clear}" value="Reset" style="float: right;" reRender="page, pagination" oncomplete="onRerenderForm();"/>
+                           <apex:actionFunction action="{!getDate}" name="getDateFromDatePicker" reRender="none" oncomplete="onRerenderForm();">
+                                        <apex:param name="date" value="" />
+                                    </apex:actionFunction>
+                           <apex:actionFunction action="{!searchRecords}" name="search" reRender="page, pagination" oncomplete="onRerenderForm();">
+                                        <apex:param name="date" value="" />
+                                    </apex:actionFunction>
+                       </div>   
+                    </div>
+                    <div class="rightTopPanel">
+                    <span class="selectedCount">
+                        	
+                            <span class="selectedJobCountLabel">Selected Jobs</span>
+                            <div class="circle-width-text selectedJobCount">
+                                00
+                            </div>
+                            <apex:commandButton styleclass="applyButton apply" value="Apply" style="float: right;" reRender="none"/>
+                        	
+                        </span>
+                    </div>
+                </apex:form>
+            </div>
+            <div class="mainPart" >
+                <div class="mainPartLeftPanel">&nbsp;</div>
+                <div class="jobs">
+                    <apex:form id="page">
+                    <apex:messages rendered="{!noRecords}" styleClass="message"/>
+                    <apex:repeat value="{!jobs}" var="job">
+                        <div class="job" data-jobId="{!job.Id}">
+                            <div class="short">
+                                <div class="informationFirst"><apex:outputLabel value="Vacancy title: " for="name"/><apex:outputText value="{!job.Name}" id="name" styleClass="name"/></div>
+                                <div class="information "><apex:outputLabel value="Salary range: " for="salary"/><apex:outputText value="{!job.Salary__c}" id="salary" styleClass="salary"/></div>
+                                <div class="informationLast"><apex:outputLabel value="Location: " for="location"/><apex:outputText value="{!job.Location__c}" id="location" styleClass="location"/></div>
+                                <apex:image styleClass="button" onclick="openDetail(this);"  style="height: 12px; width: 15px; float: right; cursor: pointer;" value="{!URLFOR($Resource.siteMainPage,'siteMainPage/images/arrow.png')}"/>
+                            </div>
+                            <div class="detail" >
+                                <div class="information">
+                                    <apex:outputLabel value="Education: " for="education"/><apex:outputText value="{!job.Education__c}" id="education" styleClass="education"/>
+                                </div>
+                                <div class="information">
+                                    <apex:outputLabel value="Description: " for="description"/><apex:outputText value="{!job.Description__c}" id="description" styleClass="description"/>
+                                </div>
+                                <div class="information">
+                                    <apex:outputLabel value="Skills required: " for="skills"/><apex:outputText value="{!job.Skills_Required__c}" id="skills" styleClass="skills"/>
+                                </div>
+                                <div class="information">
+                                    <apex:outputLabel value="Manager name: " for="manager"/><apex:outputText value="{!job.Manager_name__c}" id="manager" styleClass="manager"/>
+                                </div>
+                                <div class="information">
+                                    <apex:outputLabel value="Manager phone: " for="phone"/><apex:outputText value="{!job.Phone__c}" id="phone" styleClass="phone"/>
+                                </div>
+                                <div class="informationLast">
+                                    <apex:outputLabel value="Manager email: " for="email"/><apex:outputText value="{!job.Email__c}" id="email" styleClass="email"/>
+                                </div>
+                                <apex:commandLink action="{!selectJobAdverisementsIds}"  value="Select" onclick="selectJob(this);" style="float: right; text-decoration: none;" reRender="none" styleClass="selectJob">
+                                    <apex:param name="jobId" value="{!job.Id}"/>
+                                </apex:commandLink>
+                                <apex:commandLink value="DeSelect" onclick="selectJob(this);" style="float: right; text-decoration: none; display: none;" reRender="none" styleClass="DeselectJob">
+                                    
+                                </apex:commandLink>
+                                
+                            </div>                  
+                        </div>
+                    </apex:repeat>
+                    <apex:actionFunction action="{!deleteSelectedJobId}" name="deleteSelectedJobId" reRender="none">
+                        <apex:param name="jobid" value="" />
+                    </apex:actionFunction>
+                    </apex:form>
+                </div>
+                <div class="mainPartRightPanel">
+                    <div class="selectedJobs"> <div class="notFixedSelectedJobs"></div></div>
+                </div>
+                <div class="navigation" >
+                    <apex:form id="pagination">
+                        <apex:outputLabel value="Display records per page: " for="recordsOnPage" styleClass="labelRec"/> <apex:selectList id="recordsOnPage" value="{!rec}" size="1" onchange="{!updatePage}" style="margin-left: 17px; margin-right: 5px; margin-bottom: 3px;">
+                        <apex:selectOption itemLabel="5" itemValue="5"></apex:selectOption>
+                        <apex:selectOption itemLabel="10" itemValue="10"></apex:selectOption>
+                        <apex:selectOption itemLabel="20" itemValue="20"></apex:selectOption>
+                        <apex:selectOption itemLabel="30" itemValue="30"></apex:selectOption>
+                        <apex:selectOption itemLabel="50" itemValue="50"></apex:selectOption>
+                        <apex:actionSupport event="onchange" reRender="page, pagination" action="{!updatePage}" oncomplete="onRerenderForm();"/>
+                    </apex:selectList><br/>
+                        <div><apex:outputLabel value="Total count of records: " for="recordsOnPage" styleClass="total" style="margin-left: 5px;"/><apex:outputText value="{!totalRecs}" id="total"/></div>
+                        <apex:commandButton value="<<" action="{!first}"  reRender="page, pagination" disabled="{!DisablePrv}" styleClass="paginationButton" oncomplete="onRerenderForm();"/> 
+                        <apex:commandButton value="<" action="{!previous}"  reRender="page, pagination" disabled="{!DisablePrv}" styleClass="paginationButton" oncomplete="onRerenderForm();"/>        
+                   		<apex:commandButton value=">" action="{!next}"  reRender="page, pagination" disabled="{!DisableNxt}" styleClass="paginationButton" oncomplete="onRerenderForm();"/>
+                    	<apex:commandButton value=">>" action="{!last}"  reRender="page, pagination" disabled="{!DisableNxt}" styleClass="paginationButton" oncomplete="onRerenderForm();"/>
+                    </apex:form>
+                </div>
+            </div>
+        </div>
+    <div id="dialog" title="Candidate CV">
+        <div class="dialogWindow">
+                <div style="width: 50%; float: left;">
+                    <apex:form >
+                    <div class="dialogSectionTitle"> <apex:outputText value="Personal Information" /></div>
+                    <div>
+                        <div>
+                            <apex:inputText html-placeholder="Full Name" value="{!candidateName}" styleClass="dialogInformation candidateName"/>
+                        </div>
+                        <div>
+                            <apex:inputText html-placeholder="Age" value="{!candidateAge}" styleClass="dialogInformation candidateAge"/>
+                        </div>
+                        <div>
+                            <apex:inputText html-placeholder="Salary" value="{!candidateSalary}" styleClass="dialogInformation candidatesalary"/>
+                        </div>
+                        <div>
+                            <apex:selectList value="{!candidateStatus}" styleClass="CVStatus candidateStatus" size="1">
+                                <apex:selectOption itemLabel="Unemployed" itemValue="Unemployed"></apex:selectOption>
+                                <apex:selectOption itemLabel="Employed" itemValue="Employed"></apex:selectOption>
+                            </apex:selectList>
+                        </div>
+                        <div>
+                            <apex:inputText html-placeholder="Phone" value="{!candidatePhone}" styleClass="dialogInformation candidatePhone"/>
+                        </div>
+                        <div>
+                            <apex:inputText html-placeholder="Email" value="{!candidateEmail}" styleClass="dialogInformation candidateEmail"/>
+                        </div>
+                        <div>
+                            <apex:inputTextarea html-placeholder="Additional Info" value="{!candidateInfo}" styleClass="dialogInformation candidateInfo"/>
+                        </div>
+                        
+                    </div>
+                    </apex:form>
+                </div>
+                <div style="width: 50%; float: left;">
+                    <div class="dialogSectionTitle"> <apex:outputText value="Upload Photo" /></div>
+                    <div>
+                        <apex:form >
+                        <div><apex:inputFile value="" accept="png,jpg"  styleclass="photo"></apex:inputFile></div>
+                        <img src="" class="preview" style="width: 278px; margin-top: 3px;"/>
+                        </apex:form>
+                    </div>
+                </div>
+                <div style="width: 100%; position: static; height: 50px;">
+                    <apex:form id="message" styleClass="messageForm">
+                    	<apex:messages rendered="{!OR(AND(insertSelectedJobRecordFlag, insertCVRecordFlag, uploadImageFlag), AND(insertSelectedJobRecordFlag, uploadImageFlag))}" styleClass="message"/>
+                    </apex:form>
+                </div>
+                <div class="sendCVButton">
+                    <apex:form >
+                    <apex:commandButton value="Send CV" styleClass="sendCV" style="background-color: #ffa400; border-radius: 5px; border-style: solid; border-color: #ffa400; color: white; font-weight: bold; background-image: none;" reRender="none" onclick="sendCV();"/>
+                    
+                    <apex:actionFunction action="{!sendCV}" name="sendCandidateCV" reRender="message" >
+                        <apex:param name="name" value="" />
+                        <apex:param name="age" value="" />
+                        <apex:param name="salary" value="" />
+                        <apex:param name="status" value="" />
+                        <apex:param name="phone" value="" />
+                        <apex:param name="email" value="" />
+                        <apex:param name="info" value="" />
+                        <apex:param name="photo" value="" />
+                    </apex:actionFunction>
+                    </apex:form>
+                </div>
+        </div>
+    </div>
+</apex:page>

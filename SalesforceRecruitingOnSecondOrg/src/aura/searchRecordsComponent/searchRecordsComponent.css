@@ -1,0 +1,17 @@
+.THIS div.left-align.button-group.slds-size_3-of-12 {
+    
+    
+}
+.THIS div.slds-button-group.slds-m-top_medium{
+    
+}
+.THIS .slds-button.slds-button_neutral.search-button{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-color: orange;
+}
+.THIS .slds-form-element__help{
+    position: absolute;
+    top: 0px;
+}
