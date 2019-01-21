@@ -1,0 +1,46 @@
+44.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:20:05.0 (160434)|USER_INFO|[EXTERNAL]|0051t000000KDQR|vikaephimova1996@mycomp.com|Greenwich Mean Time|GMTZ
+17:20:05.0 (214374)|EXECUTION_STARTED
+17:20:05.0 (221392)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:20:05.0 (3712616)|CODE_UNIT_STARTED|[EXTERNAL]|01p1t00000Kyl3m|InsertCandidateCV.sendCandidateCV(String, String, String, String, String, String, Integer, String, List<Job_Advertisement__c>)
+17:20:05.0 (4035393)|SYSTEM_MODE_ENTER|false
+17:20:05.0 (4088143)|SYSTEM_MODE_EXIT|false
+17:20:05.0 (4128331)|SYSTEM_MODE_ENTER|false
+17:20:05.0 (4747330)|SOQL_EXECUTE_BEGIN|[9]|Aggregations:0|SELECT Id, Name FROM CandidateCV__c WHERE Email__c = :tmpVar1 LIMIT 1
+17:20:05.0 (41968131)|SOQL_EXECUTE_END|[9]|Rows:0
+17:20:05.0 (44272887)|DML_BEGIN|[15]|Op:Insert|Type:CandidateCV__c|Rows:1
+17:20:05.0 (75917261)|DML_END|[15]
+17:20:05.0 (76743405)|DML_BEGIN|[18]|Op:Upsert|Type:Selected_Job__c|Rows:1
+17:20:05.0 (108019904)|DML_END|[18]
+17:20:05.0 (109397940)|DML_BEGIN|[91]|Op:Insert|Type:ContentVersion|Rows:1
+17:20:05.0 (353008997)|DML_END|[91]
+17:20:05.0 (353565892)|SOQL_EXECUTE_BEGIN|[93]|Aggregations:0|SELECT ContentDocumentId FROM ContentVersion WHERE Title = :tmpVar1
+17:20:05.0 (390349529)|SOQL_EXECUTE_END|[93]|Rows:2
+17:20:05.0 (391144769)|FATAL_ERROR|System.QueryException: List has more than 1 row for assignment to SObject
+
+Class.InsertCandidateCV.uploadCandidatesImage: line 93, column 1
+Class.InsertCandidateCV.sendCandidateCV: line 25, column 1
+17:20:05.0 (391171821)|FATAL_ERROR|System.QueryException: List has more than 1 row for assignment to SObject
+
+Class.InsertCandidateCV.uploadCandidatesImage: line 93, column 1
+Class.InsertCandidateCV.sendCandidateCV: line 25, column 1
+17:20:05.391 (391186008)|CUMULATIVE_LIMIT_USAGE
+17:20:05.391 (391186008)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:20:05.391 (391186008)|CUMULATIVE_LIMIT_USAGE_END
+
+17:20:05.0 (391247846)|CODE_UNIT_FINISHED|InsertCandidateCV.sendCandidateCV(String, String, String, String, String, String, Integer, String, List<Job_Advertisement__c>)
+17:20:05.0 (395388037)|CODE_UNIT_FINISHED|Aura
+17:20:05.0 (396528943)|EXECUTION_FINISHED

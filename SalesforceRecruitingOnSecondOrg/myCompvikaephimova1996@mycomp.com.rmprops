@@ -40,8 +40,8 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.cmp</ItemKey>
             <Id>0Ad1t000001B3bkCAC</Id>
-            <Hash>92VetUgOB6A49lG0uRWgDg==</Hash>
-            <LastModifiedDateUtcTicks>131922967770000000</LastModifiedDateUtcTicks>
+            <Hash>91LbBSFvjrY06QuHfR8VdQ==</Hash>
+            <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.css</ItemKey>
@@ -52,8 +52,8 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsController.js</ItemKey>
             <Id>0Ad1t000001B3fZCAS</Id>
-            <Hash>EyiXCoPgMKuT8HIoVyx+Jg==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>hXCl08B51EFy53OrC4a31g==</Hash>
+            <LastModifiedDateUtcTicks>131925676510000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsHelper.js</ItemKey>
@@ -70,14 +70,14 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindow.cmp</ItemKey>
             <Id>0Ad1t000001CXNRCA4</Id>
-            <Hash>VzoWFXA+IxJ6mfBQVYFGdg==</Hash>
-            <LastModifiedDateUtcTicks>131922967770000000</LastModifiedDateUtcTicks>
+            <Hash>kmMo+TIFvnk/CCgTMNB4Pg==</Hash>
+            <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindowController.js</ItemKey>
             <Id>0Ad1t000001CXNWCA4</Id>
-            <Hash>sURHDhq50rg0AUuN+oFk/A==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>EyLa5Rs8KAow/ZkamFXPEw==</Hash>
+            <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\ResetSearch\ResetSearch.evt</ItemKey>
@@ -134,6 +134,12 @@
             <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\aura\sendCandidateCV\sendCandidateCV.evt</ItemKey>
+            <Id>0Ad1t000001Cnv5CAC</Id>
+            <Hash>vGBohrkm0YIz2qlKx3pjvg==</Hash>
+            <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\classes\AssetImage.cls</ItemKey>
             <Id>01p1t00000Dk2PTAAZ</Id>
             <Hash>1ujpUrtwMNw44K808ceJFg==</Hash>
@@ -167,17 +173,6 @@
             <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
-            <ItemKey>src\classes\ExampleController.cls</ItemKey>
-            <Id>01p1t00000B4EgPAAV</Id>
-            <Hash>IXVuJ0I3BwUz3r749L8PzQ==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
-        </RemoteItemProperties>
-        <RemoteItemProperties>
-            <ItemKey>src\classes\ExampleController.cls-meta.xml</ItemKey>
-            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
-        </RemoteItemProperties>
-        <RemoteItemProperties>
             <ItemKey>src\classes\ForgotPasswordController.cls</ItemKey>
             <Id>01p1t00000By91DAAR</Id>
             <Hash>2PBu1CvNXOdQ7kEoGcKGGw==</Hash>
@@ -202,13 +197,13 @@
         <RemoteItemProperties>
             <ItemKey>src\classes\InsertCandidateCV.cls</ItemKey>
             <Id>01p1t00000Kyl3mAAB</Id>
-            <Hash>UkuAVBWfY9Ap9XblDH35Ng==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <Hash>GXmTXPX6Xy/P8pkpQRP4hQ==</Hash>
+            <LastModifiedDateUtcTicks>131925664240000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\InsertCandidateCV.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131925664240000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementPageControllerTest.cls</ItemKey>
@@ -224,24 +219,24 @@
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementPageForSiteController.cls</ItemKey>
             <Id>01p1t00000BuvwvAAB</Id>
-            <Hash>D9Ybg+R2Jm39wyNNr4zSQA==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <Hash>39cXczbI3LL67Aox6q6k6A==</Hash>
+            <LastModifiedDateUtcTicks>131925657620000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementPageForSiteController.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131925657620000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementsController.cls</ItemKey>
             <Id>01p1t00000HGCF9AAP</Id>
             <Hash>354U4flyilONIqPK27FkHw==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementsController.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\ListOfJobAdvertisementController.cls</ItemKey>
@@ -258,12 +253,12 @@
             <ItemKey>src\classes\ListOfJobAdvertisementControllerTest.cls</ItemKey>
             <Id>01p1t00000B4zMTAAZ</Id>
             <Hash>AZedM31ftIIkZxmPF7v3CQ==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\ListOfJobAdvertisementControllerTest.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\MyProfilePageController.cls</ItemKey>
@@ -302,12 +297,12 @@
             <ItemKey>src\classes\RestRecourceForJobAdvertisements.cls</ItemKey>
             <Id>01p1t00000ACsIEAA1</Id>
             <Hash>P94JUv9jkz/RLNisiDTjEg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\RestRecourceForJobAdvertisements.cls-meta.xml</ItemKey>
             <Hash>Zq3gQSxTZehdIucyITjunw==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\RestResourceForGetImage.cls</ItemKey>
@@ -335,12 +330,12 @@
             <ItemKey>src\classes\SiteLoginController.cls</ItemKey>
             <Id>01p1t00000By917AAB</Id>
             <Hash>G1f1bzrQHc0Qq5eU9bpK9w==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\SiteLoginController.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\SiteLoginControllerTest.cls</ItemKey>
@@ -379,23 +374,23 @@
             <ItemKey>src\classes\TestDataFactory.cls</ItemKey>
             <Id>01p1t00000B4zMYAAZ</Id>
             <Hash>WVrhKoqqeDu/ahnzp8RG9Q==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\TestDataFactory.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\TestEndpointForGetImage.cls</ItemKey>
             <Id>01p1t00000EcMf2AAF</Id>
             <Hash>9E7W1l6RD/V9Fv0fNt/cVA==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\TestEndpointForGetImage.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\TestForDeleteSelectedJobsTrigger.cls</ItemKey>

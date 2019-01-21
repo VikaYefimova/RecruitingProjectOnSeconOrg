@@ -2,7 +2,11 @@
     <aura:attribute name="candidateStatus" type="String" />
     <aura:attribute name="selectedJobs" type="Job_Advertisement__c[]" />
     <aura:attribute name="image" type="String" />
+	<aura:attribute name="noFieldComplete" type="Boolean"/>
+	<aura:attribute name="errorCVSending" type="Boolean"/>
+	<aura:attribute name="cvSendingSuccessfull" type="Boolean"/>
     <aura:registerEvent name="closeWindow" type="c:closeModalWindow"/>
+	<aura:registerEvent name="sendCVSuccessful" type="c:sendCandidateCV"/>
 	<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
         <div class="slds-modal__container">
             <header class="slds-modal__header">
@@ -33,6 +37,21 @@
                         <img name="image" class="image-preview" aura:id="imagePreview"/>
                     </lightning:layoutItem>
                 </lightning:layout>
+				<aura:if isTrue="{!v.noFieldComplete}">
+					<ui:message title="Invalid fields value" severity="error" closable="false">
+										Full Name, Age, Phone, Email fields and image are required!
+								</ui:message>
+				</aura:if>
+				<aura:if isTrue="{!v.errorCVSending}">
+					<ui:message title="Error" severity="error" closable="false">
+										Your CV was not send. Refresh page or try later!
+								</ui:message>
+				</aura:if>
+				<aura:if isTrue="{!v.cvSendingSuccessfull}">
+					<ui:message title="Successful" severity="confirm" closable="false">
+										Your CV was send successfully!
+								</ui:message>
+				</aura:if>
             </div>
             <footer class="slds-modal__footer">
                 <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{! c.closeModel }"/>

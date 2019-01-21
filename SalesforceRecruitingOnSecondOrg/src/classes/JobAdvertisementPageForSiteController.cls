@@ -289,7 +289,7 @@ public class JobAdvertisementPageForSiteController {
         try{
             insert image;
             ContentDocumentLink relatedFile = new ContentDocumentLink();
-            Id contentid = [select ContentDocumentId from ContentVersion where Title =: candidateName].ContentDocumentId;
+            Id contentid = [select ContentDocumentId from ContentVersion where Title =: candidateName LIMIT 1].ContentDocumentId;
             relatedFile.ContentDocumentId = contentid;
             relatedFile.LinkedEntityId = recId;
             relatedFile.ShareType = 'I';
