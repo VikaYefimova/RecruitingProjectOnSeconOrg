@@ -45,6 +45,9 @@
 		action.setCallback(this, function(response){
 			console.log("response was sent!!!");
             console.log(response.getReturnValue());
+			if(response.getReturnValue() === 'Hello in Apex class'){
+				
+			}
 		});
 		$A.enqueueAction(action);
     },
