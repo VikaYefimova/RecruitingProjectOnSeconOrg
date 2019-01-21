@@ -1,0 +1,40 @@
+public with sharing class InsertCandidateCV {
+
+
+	@AuraEnabled
+	public static String sendCandidateCV(String fullName, String email, String status, String additionalInfo, String salary, String phone, Integer age, String imageString, List<Job_Advertisement__c> selectedJobs) {
+		system.debug('fullName' + fullName);
+		System.debug('email' + email);
+		System.debug('status' + status);
+		system.debug('image ++++     : ' + imageString);
+		System.debug('selected jobs :   ' + selectedJobs);
+		CandidateCV__c candidate = insertCandidateRecord(fullName, email, status, phone, age);
+		return 'Hello in Apex class';
+	}
+	public static CandidateCV__c insertCandidateRecord(String fullName, String email, String status, Integer age) {
+		String result = '';
+		CandidateCV__c candidate = new CandidateCV__c();
+		candidate.Name = fullName;
+		candidate.Email__c = email;
+		candidate.Candidate_Age__c = age;
+		candidate.Phone__c = phone;
+		candidate.Status__c = status;
+		return candidate;
+	}
+	public static List<Selected_Job__c> insertSelectedJobs(Id candidateId, List<Job_Advertisement__c> selectedJobs, Integer candidateAge, String status, String phone, String additionalInfo, String salary) {
+		List<Selected_Job__c> selectedJobs = new List<Selected_Job__c> ();
+		for (Job_Advertisement__c job : selectedJobs) {
+			Selected_Job__c selectedJOb = new Selected_Job__c();
+			selectedJOb.Job_Advertisement__c = job.Id;
+			selectedJOb.CandidateCV__c = candidateId;
+			selectedJOb.Candidate_Age__c = candidateAge;
+			selectedJOb.Candidate_Salary__c = salary;
+			selectedJob.Candidate_Status__c = status;
+			selectedJob.Candidate_Phone__c = phone;
+			selectedJob.Additional_Info__c = additionalInfo;
+			selectedJob.External_Number__c = candidateId + job.Id;
+			selectedJobs.add(selectedJob);
+		}
+		return selectedJobs;
+	}
+}

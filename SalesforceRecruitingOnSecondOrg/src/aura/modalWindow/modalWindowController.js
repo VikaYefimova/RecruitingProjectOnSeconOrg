@@ -27,28 +27,37 @@
         component.set("v.candidateStatus", status);
     },
     sendCV : function(component, event, helper) {
-        //console.log('image     ' + component.get("v.image"));
-        console.log(component.find("fullName").get("v.value") + " " + component.find("age").get("v.value"));
-        console.log("selected jobs " + JSON.stringify(component.get("v.selectedJobs")));
-        var action = component.get("c.sendCandidateCV");
-		action.setParams({
-			fullName : component.find("fullName").get("v.value"),
-			email : component.find("email").get("v.value"),
-			status : component.get("v.candidateStatus"),
-			additionalInfo : component.find("comments").get("v.value"),
-			salary : component.find("salary").get("v.value"),
-			phone : component.find("phone").get("v.value"),
-			age : component.find("age").get("v.value"),
-			imageString : component.get("v.image"),
-            selectedJobs : component.get("v.selectedJobs")
-		});
-		action.setCallback(this, function(response){
-			console.log("response was sent!!!");
-            console.log(response.getReturnValue());
-			if(response.getReturnValue() === 'Hello in Apex class'){
-				
-			}
-		});
-		$A.enqueueAction(action);
+		if(component.find("fullName").get("v.value") && component.find("email").get("v.value") && component.find("age").get("v.value") && component.find("phone").get("v.value") && component.get("v.image")){
+			component.set("v.noFieldComplete", false);
+			var action = component.get("c.sendCandidateCV");
+			action.setParams({
+				fullName : component.find("fullName").get("v.value"),
+				email : component.find("email").get("v.value"),
+				status : component.get("v.candidateStatus"),
+				additionalInfo : component.find("comments").get("v.value"),
+				salary : component.find("salary").get("v.value"),
+				phone : component.find("phone").get("v.value"),
+				age : component.find("age").get("v.value"),
+				imageString : component.get("v.image"),
+				selectedJobs : component.get("v.selectedJobs")
+			});
+			action.setCallback(this, function(response){
+				console.log("response was sent!!!");
+				console.log(response.getReturnValue());
+				if(response.getReturnValue() === 'Successful'){
+					component.set("v.cvSendingSuccessfull", true);
+					component.getEvent("sendCVSuccessful").fire();
+
+				}
+				else if(response.getReturnValue() != 'Successful'){
+					component.set("v.errorCVSending", true);
+				}
+			});
+			$A.enqueueAction(action);
+		}
+		else if(!component.find("fullName").get("v.value") || !component.find("email").get("v.value") || !component.find("age").get("v.value") || !component.find("phone").get("v.value") || !component.get("v.image")){
+			console.log('error in fields');
+			component.set("v.noFieldComplete", true);
+		}
     },
 })

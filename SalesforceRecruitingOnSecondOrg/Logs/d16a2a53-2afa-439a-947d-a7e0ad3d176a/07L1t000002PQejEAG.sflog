@@ -1,0 +1,52 @@
+44.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+16:19:58.0 (113817)|USER_INFO|[EXTERNAL]|0051t000000KDQR|vikaephimova1996@mycomp.com|Greenwich Mean Time|GMTZ
+16:19:58.0 (149245)|EXECUTION_STARTED
+16:19:58.0 (154011)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+16:19:58.0 (3217559)|CODE_UNIT_STARTED|[EXTERNAL]|01p1t00000Kyl3m|InsertCandidateCV.sendCandidateCV(String, String, String, String, String, String, Integer, String, List<Job_Advertisement__c>)
+16:19:58.0 (3447348)|SYSTEM_MODE_ENTER|false
+16:19:58.0 (3507276)|SYSTEM_MODE_EXIT|false
+16:19:58.0 (3590190)|SYSTEM_MODE_ENTER|false
+16:19:58.0 (4868677)|SOQL_EXECUTE_BEGIN|[9]|Aggregations:0|SELECT Id, Name FROM CandidateCV__c WHERE Email__c = :tmpVar1 LIMIT 1
+16:19:58.0 (7955720)|SOQL_EXECUTE_END|[9]|Rows:1
+16:19:58.0 (9189327)|DML_BEGIN|[32]|Op:Update|Type:CandidateCV__c|Rows:1
+16:19:58.0 (31206078)|DML_END|[32]
+16:19:58.0 (33129394)|DML_BEGIN|[35]|Op:Upsert|Type:Selected_Job__c|Rows:3
+16:19:58.0 (79356047)|DML_END|[35]
+16:19:58.0 (80034895)|SOQL_EXECUTE_BEGIN|[125]|Aggregations:0|SELECT Name FROM Job_Advertisement__c WHERE id = :tmpVar1
+16:19:58.0 (82040479)|SOQL_EXECUTE_END|[125]|Rows:1
+16:19:58.0 (82287866)|USER_DEBUG|[126]|DEBUG|title: Job_Advertisement__c:{Name=Teacher, Id=a001t000001tCyFAAU}
+16:19:58.0 (82517192)|SOQL_EXECUTE_BEGIN|[125]|Aggregations:0|SELECT Name FROM Job_Advertisement__c WHERE id = :tmpVar1
+16:19:58.0 (84308336)|SOQL_EXECUTE_END|[125]|Rows:1
+16:19:58.0 (84459539)|USER_DEBUG|[126]|DEBUG|title: Job_Advertisement__c:{Name=tiititit, Id=a001t000001to1GAAQ}
+16:19:58.0 (84649435)|SOQL_EXECUTE_BEGIN|[125]|Aggregations:0|SELECT Name FROM Job_Advertisement__c WHERE id = :tmpVar1
+16:19:58.0 (86231758)|SOQL_EXECUTE_END|[125]|Rows:1
+16:19:58.0 (86363716)|USER_DEBUG|[126]|DEBUG|title: Job_Advertisement__c:{Name=test job0, Id=a001t000003pKBRAA2}
+16:19:58.0 (115507835)|EMAIL_QUEUE|[136]|subject: Resume received, bccSender: false, saveAsActivity: true, useSignature: true, toAddresses: [vikaephimova1996@gmail.com], htmlBody: Your resume received and will be reviewed soon. Your selected Jobs are: &nbsp;Teacher&nbsp;tiititit&nbsp;test job0&nbsp;, 
+16:19:58.0 (116578536)|SOQL_EXECUTE_BEGIN|[44]|Aggregations:0|SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :tmpVar1
+16:19:58.0 (122546218)|SOQL_EXECUTE_END|[44]|Rows:1
+16:19:58.0 (124070044)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT id FROM ContentVersion WHERE (ContentDocumentId = :tmpVar1 AND isLatest = TRUE)
+16:19:58.0 (131505023)|SOQL_EXECUTE_END|[45]|Rows:1
+16:19:58.0 (131820536)|DML_BEGIN|[111]|Op:Update|Type:ContentVersion|Rows:1
+16:19:58.0 (214251085)|DML_END|[111]
+16:19:58.0 (214330062)|USER_DEBUG|[113]|DEBUG|update
+16:19:58.0 (214363200)|SYSTEM_MODE_EXIT|false
+16:19:58.255 (255001030)|CUMULATIVE_LIMIT_USAGE
+16:19:58.255 (255001030)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 1 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:19:58.255 (255001030)|CUMULATIVE_LIMIT_USAGE_END
+
+16:19:58.0 (255051537)|CODE_UNIT_FINISHED|InsertCandidateCV.sendCandidateCV(String, String, String, String, String, String, Integer, String, List<Job_Advertisement__c>)
+16:19:58.0 (255119866)|CODE_UNIT_FINISHED|Aura
+16:19:58.0 (256042115)|EXECUTION_FINISHED

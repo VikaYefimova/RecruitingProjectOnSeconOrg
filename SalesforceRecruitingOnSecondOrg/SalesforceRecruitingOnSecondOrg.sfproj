@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -29,6 +29,7 @@
     <Folder Include="aura\SearchRecords\" />
     <Folder Include="aura\selectedJobAdvertisementComponent\" />
     <Folder Include="aura\SelectJob\" />
+    <Folder Include="aura\sendCandidateCV\" />
     <Folder Include="classes\" />
     <Folder Include="components\" />
     <Folder Include="objects\" />
@@ -190,6 +191,13 @@
       <BundleName>SelectJob</BundleName>
       <LightningType>Event</LightningType>
     </Compile>
+    <Compile Include="aura\sendCandidateCV\sendCandidateCV.evt">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\sendCandidateCV\sendCandidateCV.evt</PhysicalRelativePath>
+      <BundleName>sendCandidateCV</BundleName>
+      <LightningType>Event</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="classes\AssetImage.cls">
       <PhysicalRelativePath>src\classes\AssetImage.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
@@ -200,10 +208,6 @@
     </Compile>
     <Compile Include="classes\ChangePasswordControllerTest.cls">
       <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
-      <SubType>Class</SubType>
-    </Compile>
-    <Compile Include="classes\ExampleController.cls">
-      <PhysicalRelativePath>src\classes\ExampleController.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
     </Compile>
     <Compile Include="classes\ForgotPasswordController.cls">
@@ -906,13 +910,6 @@
       <PackageName>
       </PackageName>
       <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
-    </None>
-    <None Include="classes\ExampleController.cls-meta.xml">
-      <PhysicalRelativePath>src\classes\ExampleController.cls-meta.xml</PhysicalRelativePath>
-      <SubType>Metadata</SubType>
-      <PackageName>
-      </PackageName>
-      <DependentUpon>classes\ExampleController.cls</DependentUpon>
     </None>
     <None Include="classes\ForgotPasswordController.cls-meta.xml">
       <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>

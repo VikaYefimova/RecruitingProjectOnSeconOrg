@@ -3,11 +3,33 @@
     LastClearTime="0001-01-01T00:00:00">
     <TestClassesCache>
         <TestClassCache>
-            <TestClassId>01p1t00000ByEnuAAF</TestClassId>
-            <TestQueueId>7091t0000001DNYAA2</TestQueueId>
+            <TestClassId>01p1t00000By91CAAR</TestClassId>
+            <TestQueueId>7091t0000001EbhAAE</TestQueueId>
             <TestMethodsCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPavEAG</ApexLogId>
+                    <Name>testChangePasswordController</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000By91EAAR</TestClassId>
+            <TestQueueId>7091t0000001EbiAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPaHEAW</ApexLogId>
+                    <Name>testForgotPasswordController</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000ByEnuAAF</TestClassId>
+            <TestQueueId>7091t0000001EbjAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>testSearchAndRecordsManagingFlow</Name>
                     <Message>System.QueryException: line 1:79 no viable alternative at character '-'</Message>
                     <StackTrace>Class.JobAdvertisementPageForSiteController.updateTotalRecords: line 116, column 1
@@ -17,202 +39,202 @@ Class.JobAdvertisementPageControllerTest.testSearchAndRecordsManagingFlow: line 
                     <TestResultStatus>Fail</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>addSelectedJobTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>clearTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>deleteJobAdvertisementIdTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>disableNextButtonTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>disablePreviousButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>getDateTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>getJobAdvertisementIdTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>goToFirstPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>goToLastPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>goToNextPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>goToPreviousPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>imageNotUpdatingTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>JobAdvertisementPageForSiteConstructorTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>lastPageNumberTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>notDisableNextButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>notDisablePreviousButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>notSendEmailForNewCandidateTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>notUploadCandidateImageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchByNameTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchByNameTestWhenSearchQueryIsNotEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchByPublishedDateWhenOperatorAfter</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchByPublishedDateWhenOperatorBefore</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchByPublishedDateWhenSearchQueryNotEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchBySalaryRange</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchBysalaryRangeWhenSearchQueryNotEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchRecordsWhenOnlyNameEntered</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchRecordWhenAllCriteriasEntered</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchRecordWhenNameAndDateEntered</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchRecordWhenOnlyPublisDateEntered</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>searchRecordWhenOnlySalaryRangeChoose</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>sendCVwhenCandidateIsNewAndCVWasNotSendTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>sendCVwhenCandidateIsNewTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>sendCVWhenCandidateNotNewAndCVWillNotSendTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>sendCVWhenCandidateNotNewTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>sendEmailForNewCandidateTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>updateCandidateImageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>updatePageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>updateRecordListTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>updateRecordListWithoutRecords</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PpEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>uploadCandidateImageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
@@ -220,236 +242,295 @@ Class.JobAdvertisementPageControllerTest.testSearchAndRecordsManagingFlow: line 
         </TestClassCache>
         <TestClassCache>
             <TestClassId>01p1t00000B4zMTAAZ</TestClassId>
-            <TestQueueId>7091t0000001DNZAA2</TestQueueId>
+            <TestQueueId>7091t0000001EbkAAE</TestQueueId>
             <TestMethodsCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>disableNextButtonTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>disablePreviousButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenAllCheckBoxesChecked</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenAllCheckboxesNotChecked</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedActiveAndArchivedCheckboxes</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedActiveAndOnHoldCheckboxes</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedArchivedAndOnHoldChecboxes</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedOnlyActiveCheckBox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedOnlyArchivedCheckbox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenCheckedOnlyOnHoldCheckbox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>filterByStatusWhenSearchQueryStringNotEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>getListOfOperators</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>goToFirstPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>goToLastPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>goToNextPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>goToPreviousPageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>lastPageNumberTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>listOfJobAdvertisementControllerConstructorTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>notDisableNextButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>notDisablePreviousButton</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchByNameTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchByNameTestWhenSearchQueryIsNotEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryTestWhenSelectLessOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSearchQueryStringNotEmptyOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSelectEqualOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSelectLessOrEqualsOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSelectMoreOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSelectMoreOrEqualsOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenSelectNotEqualOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenUserNotChooseOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenUserNotEnterSalary</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchBySalaryWhenUserNotEnterSalaryAndNotChooseOperator</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordsTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordTestWhenAllCriteriasIsEmpty</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserEnterNameAndCheckCheckbox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserEnterNameAndSalary</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserEnterOnlyName</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserEnterOnlySalary</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserEnterSalaryAndCheckCheckbox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>searchRecordWhenUserOnlyCheckedCheckbox</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>testForClearMethod</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>testForUpdateTotalRecords</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>testForUpdateTotalRecordsWhenAreNotRecords</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PuEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPb0EAG</ApexLogId>
                     <Name>updatePageTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
             </TestMethodsCache>
         </TestClassCache>
         <TestClassCache>
-            <TestClassId>01p1t00000EcMf2AAF</TestClassId>
-            <TestQueueId>7091t0000001DNbAAM</TestQueueId>
+            <TestClassId>01p1t00000By91GAAR</TestClassId>
+            <TestQueueId>7091t0000001EblAAE</TestQueueId>
             <TestMethodsCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PkEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPaREAW</ApexLogId>
+                    <Name>testSave</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000ACwkYAAT</TestClassId>
+            <TestQueueId>7091t0000001EbmAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPagEAG</ApexLogId>
+                    <Name>testCreateRecord</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPagEAG</ApexLogId>
+                    <Name>testDeleteRecord</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPagEAG</ApexLogId>
+                    <Name>testGetRecords</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPagEAG</ApexLogId>
+                    <Name>testUpdateRecord</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000By918AAB</TestClassId>
+            <TestQueueId>7091t0000001EbnAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPaWEAW</ApexLogId>
+                    <Name>testSiteLoginController</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000By91AAAR</TestClassId>
+            <TestQueueId>7091t0000001EboAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPaMEAW</ApexLogId>
+                    <Name>testRegistration</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000EcMf2AAF</TestClassId>
+            <TestQueueId>7091t0000001EbqAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPaqEAG</ApexLogId>
                     <Name>testGetImage</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
@@ -457,10 +538,10 @@ Class.JobAdvertisementPageControllerTest.testSearchAndRecordsManagingFlow: line 
         </TestClassCache>
         <TestClassCache>
             <TestClassId>01p1t00000DnvazAAB</TestClassId>
-            <TestQueueId>7091t0000001DNcAAM</TestQueueId>
+            <TestQueueId>7091t0000001EbrAAE</TestQueueId>
             <TestMethodsCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PaEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPZ5EAO</ApexLogId>
                     <Name>deleteSelectedJobsWhenJObsIsArchivedTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
@@ -468,10 +549,10 @@ Class.JobAdvertisementPageControllerTest.testSearchAndRecordsManagingFlow: line 
         </TestClassCache>
         <TestClassCache>
             <TestClassId>01p1t00000EcX1FAAV</TestClassId>
-            <TestQueueId>7091t0000001DNdAAM</TestQueueId>
+            <TestQueueId>7091t0000001EbsAAE</TestQueueId>
             <TestMethodsCache>
                 <TestMethodCache>
-                    <ApexLogId>07L1t000002P8PfEAK</ApexLogId>
+                    <ApexLogId>07L1t000002PPalEAG</ApexLogId>
                     <Name>getCountOfRecordsTest</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>

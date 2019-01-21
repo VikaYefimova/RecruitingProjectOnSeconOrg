@@ -35,11 +35,14 @@
         component.set("v.isOpen", true); 
     },
     closeModel: function(component, event, helper) {  
-      component.set("v.isOpen", false);
+        component.set("v.isOpen", false);
     },
-    likenClose: function(component, event, helper) {
-      component.set("v.isOpen", true);
-      console.log('image     ' + component.get("v.image"));
+    sendCVHandler: function(component, event, helper) {
+		window.setTimeout(
+			$A.getCallback(function() {
+				component.set("v.isOpen", false);
+			}), 3000
+		);
     },
     handleFileChanges: function(component, event, helper){
         var files = event.getSource().get("v.files")[0];

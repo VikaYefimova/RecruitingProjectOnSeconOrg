@@ -21,6 +21,7 @@
     <aura:handler name="searchRecordsEvent" event="c:SearchRecords" action="{!c.searchRecords}"/>
     <aura:handler name="resetSearchResults" event="c:ResetSearch" action="{!c.resetSearch}"/>
     <aura:handler name="closeWindow" event="c:closeModalWindow" action="{!c.closeModel}"/>
+	<aura:handler name="sendCVSuccessful" event="c:sendCandidateCV" action="{!c.sendCVHandler}"/>
     <aura:handler   event="c:DeselectJob" action="{!c.deselectHandler}"/>
     
     

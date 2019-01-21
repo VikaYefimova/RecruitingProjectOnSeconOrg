@@ -1,0 +1,223 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINE;WAVE,INFO;WORKFLOW,INFO
+17:26:43.2 (2177463)|USER_INFO|[EXTERNAL]|0051t000000KDQR|vikaephimova1996@mycomp.com|Greenwich Mean Time|GMTZ
+17:26:43.2 (2277136)|EXECUTION_STARTED
+17:26:43.2 (2284401)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:26:43.2 (3319120)|HEAP_ALLOCATE|[72]|Bytes:3
+17:26:43.2 (3398798)|HEAP_ALLOCATE|[77]|Bytes:152
+17:26:43.2 (3414340)|HEAP_ALLOCATE|[342]|Bytes:408
+17:26:43.2 (3426342)|HEAP_ALLOCATE|[355]|Bytes:408
+17:26:43.2 (3437479)|HEAP_ALLOCATE|[467]|Bytes:48
+17:26:43.2 (3465716)|HEAP_ALLOCATE|[139]|Bytes:6
+17:26:43.2 (3485645)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+17:26:43.2 (3517145)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:26:43.2 (4805790)|CODE_UNIT_STARTED|[EXTERNAL]|01p1t00000HGCF9|JobAdvertisementsController.getJobs(Integer, Integer, String, String, String, String)
+17:26:43.2 (4989277)|VARIABLE_SCOPE_BEGIN|[5]|JobAdvertisementsController.finishsearchPart|String|false|true
+17:26:43.2 (5003331)|VARIABLE_SCOPE_BEGIN|[3]|JobAdvertisementsController.mainsearchPart|String|false|true
+17:26:43.2 (5010242)|VARIABLE_SCOPE_BEGIN|[4]|JobAdvertisementsController.searchCriteriaPart|String|false|true
+17:26:43.2 (5020568)|VARIABLE_SCOPE_BEGIN|[2]|JobAdvertisementsController.selectedJobIds|Set<Id>|true|true
+17:26:43.2 (5088934)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:21
+17:26:43.2 (5099389)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+17:26:43.2 (5103860)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+17:26:43.2 (5148692)|METHOD_ENTRY|[1]|01p1t00000HGCF9|JobAdvertisementsController.JobAdvertisementsController()
+17:26:43.2 (5159634)|STATEMENT_EXECUTE|[1]
+17:26:43.2 (5186387)|STATEMENT_EXECUTE|[1]
+17:26:43.2 (5217377)|HEAP_ALLOCATE|[50]|Bytes:5
+17:26:43.2 (5251276)|HEAP_ALLOCATE|[56]|Bytes:5
+17:26:43.2 (5259715)|HEAP_ALLOCATE|[64]|Bytes:7
+17:26:43.2 (5311913)|SYSTEM_MODE_ENTER|false
+17:26:43.2 (5331393)|HEAP_ALLOCATE|[2]|Bytes:5
+17:26:43.2 (5335759)|STATEMENT_EXECUTE|[2]
+17:26:43.2 (5360067)|HEAP_ALLOCATE|[2]|Bytes:4
+17:26:43.2 (5402632)|SYSTEM_CONSTRUCTOR_ENTRY|[2]|<init>(Integer)
+17:26:43.2 (5448904)|SYSTEM_CONSTRUCTOR_EXIT|[2]|<init>(Integer)
+17:26:43.2 (5544821)|VARIABLE_ASSIGNMENT|[2]|JobAdvertisementsController.selectedJobIds|[]|0x168f7292
+17:26:43.2 (5557315)|STATEMENT_EXECUTE|[3]
+17:26:43.2 (5562859)|HEAP_ALLOCATE|[3]|Bytes:158
+17:26:43.2 (5590221)|VARIABLE_ASSIGNMENT|[3]|JobAdvertisementsController.mainsearchPart|"select Name, Salary_ (138 more) ..."
+17:26:43.2 (5594632)|STATEMENT_EXECUTE|[4]
+17:26:43.2 (5603878)|VARIABLE_ASSIGNMENT|[4]|JobAdvertisementsController.searchCriteriaPart|""
+17:26:43.2 (5608049)|STATEMENT_EXECUTE|[5]
+17:26:43.2 (5611007)|HEAP_ALLOCATE|[5]|Bytes:38
+17:26:43.2 (5620241)|VARIABLE_ASSIGNMENT|[5]|JobAdvertisementsController.finishsearchPart|" limit :searchLimit  (18 more) ..."
+17:26:43.2 (5624611)|STATEMENT_EXECUTE|[54]
+17:26:43.2 (5633105)|SYSTEM_MODE_EXIT|false
+17:26:43.2 (5646906)|METHOD_EXIT|[1]|JobAdvertisementsController
+17:26:43.2 (5680959)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+17:26:43.2 (5687962)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:26:43.2 (5700156)|SYSTEM_MODE_ENTER|false
+17:26:43.2 (5747208)|VARIABLE_SCOPE_BEGIN|[7]|queryLimit|Integer|false|false
+17:26:43.2 (5771712)|VARIABLE_ASSIGNMENT|[7]|queryLimit|10
+17:26:43.2 (5776227)|VARIABLE_SCOPE_BEGIN|[7]|pageNumber|Integer|false|false
+17:26:43.2 (5785576)|VARIABLE_ASSIGNMENT|[7]|pageNumber|0
+17:26:43.2 (5789604)|VARIABLE_SCOPE_BEGIN|[7]|fullName|String|false|false
+17:26:43.2 (5797918)|VARIABLE_ASSIGNMENT|[7]|fullName|""
+17:26:43.2 (5802500)|VARIABLE_SCOPE_BEGIN|[7]|operator|String|false|false
+17:26:43.2 (5819964)|VARIABLE_ASSIGNMENT|[7]|operator|""
+17:26:43.2 (5825392)|VARIABLE_SCOPE_BEGIN|[7]|salaryRange|String|false|false
+17:26:43.2 (5837372)|VARIABLE_ASSIGNMENT|[7]|salaryRange|""
+17:26:43.2 (5844419)|VARIABLE_SCOPE_BEGIN|[7]|publishDate|String|false|false
+17:26:43.2 (5852468)|VARIABLE_ASSIGNMENT|[7]|publishDate|""
+17:26:43.2 (5868331)|HEAP_ALLOCATE|[8]|Bytes:5
+17:26:43.2 (5873576)|STATEMENT_EXECUTE|[7]
+17:26:43.2 (5875811)|STATEMENT_EXECUTE|[8]
+17:26:43.2 (5883690)|HEAP_ALLOCATE|[8]|Bytes:10
+17:26:43.2 (5921985)|SYSTEM_METHOD_ENTRY|[8]|String.valueOf(Object)
+17:26:43.2 (5941344)|HEAP_ALLOCATE|[8]|Bytes:2
+17:26:43.2 (5955663)|SYSTEM_METHOD_EXIT|[8]|String.valueOf(Object)
+17:26:43.2 (5967043)|HEAP_ALLOCATE|[8]|Bytes:12
+17:26:43.2 (6005100)|SYSTEM_METHOD_ENTRY|[8]|System.debug(ANY)
+17:26:43.2 (6020869)|USER_DEBUG|[8]|DEBUG|queryLimit10
+17:26:43.2 (6028508)|SYSTEM_METHOD_EXIT|[8]|System.debug(ANY)
+17:26:43.2 (6032078)|STATEMENT_EXECUTE|[9]
+17:26:43.2 (6043968)|SYSTEM_METHOD_ENTRY|[9]|Integer.valueOf(Object)
+17:26:43.2 (6065162)|SYSTEM_METHOD_EXIT|[9]|Integer.valueOf(Object)
+17:26:43.2 (6076539)|VARIABLE_SCOPE_BEGIN|[9]|searchLimit|Integer|false|false
+17:26:43.2 (6102599)|HEAP_ALLOCATE|[9]|Bytes:4
+17:26:43.2 (6113051)|VARIABLE_ASSIGNMENT|[9]|searchLimit|10
+17:26:43.2 (6117139)|STATEMENT_EXECUTE|[10]
+17:26:43.2 (6125436)|SYSTEM_METHOD_ENTRY|[10]|Integer.valueOf(Object)
+17:26:43.2 (6138477)|SYSTEM_METHOD_EXIT|[10]|Integer.valueOf(Object)
+17:26:43.2 (6149763)|VARIABLE_SCOPE_BEGIN|[10]|offsetsize|Integer|false|false
+17:26:43.2 (6158572)|HEAP_ALLOCATE|[10]|Bytes:4
+17:26:43.2 (6164488)|VARIABLE_ASSIGNMENT|[10]|offsetsize|0
+17:26:43.2 (6168766)|STATEMENT_EXECUTE|[11]
+17:26:43.2 (6261362)|METHOD_ENTRY|[11]|01p1t00000HGCF9|JobAdvertisementsController.searchByName(String, String)
+17:26:43.2 (6279236)|VARIABLE_SCOPE_BEGIN|[21]|searchQuery|String|false|false
+17:26:43.2 (6290688)|VARIABLE_ASSIGNMENT|[21]|searchQuery|""
+17:26:43.2 (6304466)|VARIABLE_SCOPE_BEGIN|[21]|name|String|false|false
+17:26:43.2 (6312388)|VARIABLE_ASSIGNMENT|[21]|name|""
+17:26:43.2 (6326640)|HEAP_ALLOCATE|[22]|Bytes:5
+17:26:43.2 (6330862)|STATEMENT_EXECUTE|[21]
+17:26:43.2 (6346189)|SYSTEM_METHOD_ENTRY|[22]|String.isEmpty(String)
+17:26:43.2 (6362721)|SYSTEM_METHOD_EXIT|[22]|String.isEmpty(String)
+17:26:43.2 (6370300)|STATEMENT_EXECUTE|[22]
+17:26:43.2 (6372576)|STATEMENT_EXECUTE|[25]
+17:26:43.2 (6380024)|METHOD_EXIT|[11]|01p1t00000HGCF9|JobAdvertisementsController.searchByName(String, String)
+17:26:43.2 (6391604)|VARIABLE_ASSIGNMENT|[11]|JobAdvertisementsController.searchCriteriaPart|""
+17:26:43.2 (6395905)|STATEMENT_EXECUTE|[12]
+17:26:43.2 (6425575)|METHOD_ENTRY|[12]|01p1t00000HGCF9|JobAdvertisementsController.searchBySalary(String, String)
+17:26:43.2 (6433733)|VARIABLE_SCOPE_BEGIN|[27]|searchQuery|String|false|false
+17:26:43.2 (6441021)|VARIABLE_ASSIGNMENT|[27]|searchQuery|""
+17:26:43.2 (6445057)|VARIABLE_SCOPE_BEGIN|[27]|salaryRange|String|false|false
+17:26:43.2 (6452314)|VARIABLE_ASSIGNMENT|[27]|salaryRange|""
+17:26:43.2 (6460633)|HEAP_ALLOCATE|[28]|Bytes:5
+17:26:43.2 (6464138)|STATEMENT_EXECUTE|[27]
+17:26:43.2 (6471500)|SYSTEM_METHOD_ENTRY|[28]|String.isEmpty(String)
+17:26:43.2 (6481066)|SYSTEM_METHOD_EXIT|[28]|String.isEmpty(String)
+17:26:43.2 (6502914)|STATEMENT_EXECUTE|[28]
+17:26:43.2 (6505030)|STATEMENT_EXECUTE|[31]
+17:26:43.2 (6509354)|METHOD_EXIT|[12]|01p1t00000HGCF9|JobAdvertisementsController.searchBySalary(String, String)
+17:26:43.2 (6518071)|VARIABLE_ASSIGNMENT|[12]|JobAdvertisementsController.searchCriteriaPart|""
+17:26:43.2 (6522117)|STATEMENT_EXECUTE|[13]
+17:26:43.2 (6533051)|METHOD_ENTRY|[13]|01p1t00000HGCF9|JobAdvertisementsController.searchByPublishDate(String, String, String)
+17:26:43.2 (6541331)|VARIABLE_SCOPE_BEGIN|[33]|searchQuery|String|false|false
+17:26:43.2 (6548428)|VARIABLE_ASSIGNMENT|[33]|searchQuery|""
+17:26:43.2 (6552841)|VARIABLE_SCOPE_BEGIN|[33]|publishDate|String|false|false
+17:26:43.2 (6560344)|VARIABLE_ASSIGNMENT|[33]|publishDate|""
+17:26:43.2 (6564100)|VARIABLE_SCOPE_BEGIN|[33]|operator|String|false|false
+17:26:43.2 (6571329)|VARIABLE_ASSIGNMENT|[33]|operator|""
+17:26:43.2 (6579038)|HEAP_ALLOCATE|[34]|Bytes:5
+17:26:43.2 (6582584)|STATEMENT_EXECUTE|[33]
+17:26:43.2 (6589716)|SYSTEM_METHOD_ENTRY|[34]|String.isEmpty(String)
+17:26:43.2 (6599369)|SYSTEM_METHOD_EXIT|[34]|String.isEmpty(String)
+17:26:43.2 (6603674)|STATEMENT_EXECUTE|[34]
+17:26:43.2 (6606003)|STATEMENT_EXECUTE|[42]
+17:26:43.2 (6610760)|METHOD_EXIT|[13]|01p1t00000HGCF9|JobAdvertisementsController.searchByPublishDate(String, String, String)
+17:26:43.2 (6618942)|VARIABLE_ASSIGNMENT|[13]|JobAdvertisementsController.searchCriteriaPart|""
+17:26:43.2 (6623352)|STATEMENT_EXECUTE|[14]
+17:26:43.2 (6639232)|HEAP_ALLOCATE|[14]|Bytes:70
+17:26:43.2 (6647037)|HEAP_ALLOCATE|[14]|Bytes:70
+17:26:43.2 (6678891)|SYSTEM_METHOD_ENTRY|[14]|Database.countQuery(String)
+17:26:43.2 (6710267)|HEAP_ALLOCATE|[14]|Bytes:4
+17:26:43.2 (6714923)|HEAP_ALLOCATE|[14]|Bytes:4
+17:26:43.2 (7108847)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|select count() from Job_Advertisement__c where Status__c != 'Archived'
+17:26:43.2 (10428216)|SOQL_EXECUTE_END|[14]|Rows:45
+17:26:43.2 (10450815)|HEAP_ALLOCATE|[14]|Bytes:4
+17:26:43.2 (10469686)|SYSTEM_METHOD_EXIT|[14]|Database.countQuery(String)
+17:26:43.2 (10480337)|VARIABLE_SCOPE_BEGIN|[14]|total|Integer|false|false
+17:26:43.2 (10492444)|HEAP_ALLOCATE|[14]|Bytes:4
+17:26:43.2 (10507812)|VARIABLE_ASSIGNMENT|[14]|total|45
+17:26:43.2 (10514269)|STATEMENT_EXECUTE|[15]
+17:26:43.2 (10537477)|HEAP_ALLOCATE|[15]|Bytes:196
+17:26:43.2 (10558237)|SYSTEM_METHOD_ENTRY|[15]|Database.query(String)
+17:26:43.2 (10577956)|HEAP_ALLOCATE|[15]|Bytes:4
+17:26:43.2 (10581849)|HEAP_ALLOCATE|[15]|Bytes:4
+17:26:43.2 (10585618)|HEAP_ALLOCATE|[15]|Bytes:4
+17:26:43.2 (10893790)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|select Name, Salary__c, Location__c, Education__c, Description__c, Manager_name__c, Email__c, Phone__c from Job_Advertisement__c where Status__c != 'Archived' limit :searchLimit OFFSET :offsetsize
+17:26:43.2 (13669734)|SOQL_EXECUTE_END|[15]|Rows:10
+17:26:43.2 (13705770)|HEAP_ALLOCATE|[15]|Bytes:44
+17:26:43.2 (13753156)|HEAP_ALLOCATE|[15]|Bytes:2088
+17:26:43.2 (13833511)|HEAP_ALLOCATE|[15]|Bytes:44
+17:26:43.2 (13847804)|SYSTEM_METHOD_EXIT|[15]|Database.query(String)
+17:26:43.2 (13865954)|VARIABLE_SCOPE_BEGIN|[15]|results|List<Job_Advertisement__c>|true|false
+17:26:43.2 (13904849)|VARIABLE_ASSIGNMENT|[15]|results|"List of size 10 too large to display"|0x314710bb
+17:26:43.2 (13923337)|STATEMENT_EXECUTE|[16]
+17:26:43.2 (14012244)|HEAP_ALLOCATE|[16]|Bytes:2
+17:26:43.2 (14025194)|HEAP_ALLOCATE|[16]|Bytes:12
+17:26:43.2 (14071329)|CONSTRUCTOR_ENTRY|[16]|01p1t00000HGCF9|<init>(Integer,List<Job_Advertisement__c>)|JobAdvertisementsController.wrapJobAdvertisements
+17:26:43.2 (14124534)|VARIABLE_SCOPE_BEGIN|[60]|this|JobAdvertisementsController.wrapJobAdvertisements|true|false
+17:26:43.2 (14249397)|VARIABLE_ASSIGNMENT|[60]|this|{}|0xd383f9d
+17:26:43.2 (14260849)|VARIABLE_SCOPE_BEGIN|[60]|count|Integer|false|false
+17:26:43.2 (14270397)|VARIABLE_ASSIGNMENT|[60]|count|45
+17:26:43.2 (14274933)|VARIABLE_SCOPE_BEGIN|[60]|records|List<Job_Advertisement__c>|true|false
+17:26:43.2 (14289554)|VARIABLE_ASSIGNMENT|[60]|records|"List of size 10 too large to display"|0x314710bb
+17:26:43.2 (14305044)|STATEMENT_EXECUTE|[54]
+17:26:43.2 (14307703)|STATEMENT_EXECUTE|[56]
+17:26:43.2 (14309903)|STATEMENT_EXECUTE|[58]
+17:26:43.2 (14322048)|HEAP_ALLOCATE|[58]|Bytes:4
+17:26:43.2 (14380277)|SYSTEM_CONSTRUCTOR_ENTRY|[58]|<init>()
+17:26:43.2 (14402553)|SYSTEM_CONSTRUCTOR_EXIT|[58]|<init>()
+17:26:43.2 (14416391)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:26:43.2 (14430052)|VARIABLE_ASSIGNMENT|[58]|this.searchRecords|[]|0xd383f9d
+17:26:43.2 (14440940)|HEAP_ALLOCATE|[58]|Bytes:6
+17:26:43.2 (14487700)|STATEMENT_EXECUTE|[60]
+17:26:43.2 (14490028)|STATEMENT_EXECUTE|[61]
+17:26:43.2 (14493819)|HEAP_ALLOCATE|[61]|Bytes:4
+17:26:43.2 (14501351)|VARIABLE_ASSIGNMENT|[61]|this.countOfRecords|45|0xd383f9d
+17:26:43.2 (14506237)|STATEMENT_EXECUTE|[62]
+17:26:43.2 (14514233)|VARIABLE_ASSIGNMENT|[62]|this.searchRecords|"List of size 10 too large to display"|0xd383f9d
+17:26:43.2 (14527008)|CONSTRUCTOR_EXIT|[16]|01p1t00000HGCF9|<init>(Integer,List<Job_Advertisement__c>)|JobAdvertisementsController.wrapJobAdvertisements
+17:26:43.2 (14534846)|VARIABLE_SCOPE_BEGIN|[16]|jobs|JobAdvertisementsController.wrapJobAdvertisements|true|false
+17:26:43.2 (14559315)|VARIABLE_ASSIGNMENT|[16]|jobs|{"countOfRecords":45,"searchRecords":"0x314710bb"}|0xd383f9d
+17:26:43.2 (14564432)|STATEMENT_EXECUTE|[17]
+17:26:43.2 (14568058)|HEAP_ALLOCATE|[17]|Bytes:5
+17:26:43.2 (14592135)|HEAP_ALLOCATE|[17]|Bytes:8
+17:26:43.2 (14595954)|HEAP_ALLOCATE|[17]|Bytes:6
+17:26:43.2 (14614511)|HEAP_ALLOCATE|[17]|Bytes:19
+17:26:43.2 (14619393)|HEAP_ALLOCATE|[17]|Bytes:12
+17:26:43.2 (14625493)|HEAP_ALLOCATE|[17]|Bytes:12
+17:26:43.2 (14629670)|HEAP_ALLOCATE|[17]|Bytes:31
+17:26:43.2 (14643518)|SYSTEM_METHOD_ENTRY|[17]|System.debug(ANY)
+17:26:43.2 (14665195)|USER_DEBUG|[17]|DEBUG|name operatorsalarypublishDate 
+17:26:43.2 (14672935)|SYSTEM_METHOD_EXIT|[17]|System.debug(ANY)
+17:26:43.2 (14677144)|STATEMENT_EXECUTE|[18]
+17:26:43.2 (14679719)|HEAP_ALLOCATE|[18]|Bytes:6
+17:26:43.2 (14706735)|SYSTEM_METHOD_ENTRY|[18]|String.valueOf(Object)
+17:26:43.2 (14970656)|HEAP_ALLOCATE|[18]|Bytes:2247
+17:26:43.2 (14985252)|SYSTEM_METHOD_EXIT|[18]|String.valueOf(Object)
+17:26:43.2 (14992714)|HEAP_ALLOCATE|[18]|Bytes:2253
+17:26:43.2 (15000814)|SYSTEM_METHOD_ENTRY|[18]|System.debug(ANY)
+17:26:43.2 (15006946)|USER_DEBUG|[18]|DEBUG|jobs  wrapJobAdvertisements:[countOfRecords=45, searchRecords=(Job_Advertisement__c:{Name=Teacher, Salary__c=75K-90K, Location__c=APAC, Education__c=null, Description__c=null, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000001tCyFAAU}, Job_Advertisement__c:{Name=Developer, Salary__c=90K-120K, Location__c=US, Education__c=education, Description__c=description, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000001tPqzAAE}, Job_Advertisement__c:{Name=Economist, Salary__c=50K-75K, Location__c=US, Education__c=education, Description__c=description, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000001tPr9AAE}, Job_Advertisement__c:{Name=tiititit, Salary__c=120K+, Location__c=EMEA, Education__c=jtretetyrreetyretyeytrerteytretyete, Description__c=gutgu, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000001to1GAAQ}, Job_Advertisement__c:{Name=test job0, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBRAA2}, Job_Advertisement__c:{Name=test job1, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBSAA2}, Job_Advertisement__c:{Name=test job2, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBTAA2}, Job_Advertisement__c:{Name=test job3, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBUAA2}, Job_Advertisement__c:{Name=test job4, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBVAA2}, Job_Advertisement__c:{Name=test job5, Salary__c=75K - 90K, Location__c=EMEA, Manager_name__c=Kathy Cooper Cooper, Email__c=vikaephimova1996@gmail.com, Phone__c=+380668567810, Id=a001t000003pKBWAA2})]
+17:26:43.2 (15034471)|SYSTEM_METHOD_EXIT|[18]|System.debug(ANY)
+17:26:43.2 (15038473)|STATEMENT_EXECUTE|[19]
+17:26:43.2 (15050791)|SYSTEM_MODE_EXIT|false
+17:26:43.15 (15076891)|CUMULATIVE_LIMIT_USAGE
+17:26:43.15 (15076891)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 11 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:26:43.15 (15076891)|CUMULATIVE_LIMIT_USAGE_END
+
+17:26:43.2 (15134282)|CODE_UNIT_FINISHED|JobAdvertisementsController.getJobs(Integer, Integer, String, String, String, String)
+17:26:43.2 (15401144)|CODE_UNIT_FINISHED|Aura
+17:26:43.2 (16646372)|EXECUTION_FINISHED
