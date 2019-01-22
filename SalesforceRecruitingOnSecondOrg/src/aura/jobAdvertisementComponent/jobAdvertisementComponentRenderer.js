@@ -1,5 +1,6 @@
 ({
 	afterRender  : function(component, helper) {
+	console.log('gi in rerender');
     var ret = this.superAfterRender ();
     	var componentFields = component.find("field");
         for(var i=0; i<componentFields.length ; i++){
