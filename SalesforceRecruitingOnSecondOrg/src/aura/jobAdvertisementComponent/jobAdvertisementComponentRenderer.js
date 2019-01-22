@@ -1,7 +1,14 @@
 ({
 	afterRender  : function(component, helper) {
+	console.log('gi in rerender');
     var ret = this.superAfterRender ();
-    var selectedJobs = component.get("v.selectedJobs");
+    	var componentFields = component.find("field");
+        for(var i=0; i<componentFields.length ; i++){
+            if(componentFields[i].get("v.value") === 'null'){
+                componentFields[i].set("v.value", "");
+            }
+        }
+    	var selectedJobs = component.get("v.selectedJobs");
         var selectedJobflag = false;
         var currentJob = component.get("v.job");
         var stringForFind = "Id";
@@ -13,8 +20,6 @@
             if(currentJobId === jobId){
                 var selectButton = component.find("buttonSelectJob");
         	    selectButton.set("v.label", "Deselect");
-                //console.log("label " + component.find("buttonSelectJob").get("v.label"));
-                //selectButton.set("v.label", "Deselect");
             }
         }
     return ret;

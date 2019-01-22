@@ -22,14 +22,14 @@
                 <lightning:layout>
                     <lightning:layoutItem size="6" class="left-align">
                         <lightning:input aura:id="fullName" type="text" label="" placeholder="Full Name"/>
-                        <lightning:input aura:id="age" type="number" label="" placeholder="Age"/>
+                        <lightning:input aura:id="age" type="number" label="" placeholder="Age" min="0"/>
                         <lightning:input aura:id="salary" type="text" label="" placeholder="Salary"/>
                         <lightning:select aura:id="status" name="selectStatus" label="" required="false" value="{!v.candidateStatus}" onchange="{!c.handleCandidateStatusChange}">
                             <option value="Unemployed">Unemployed</option>
                             <option value="Employed">Employed</option>
                         </lightning:select>
                         <lightning:input aura:id="phone" type="text" label="" placeholder="Phone"/>
-                        <lightning:input aura:id="email" type="text" label="" placeholder="Email"/>
+                        <lightning:input aura:id="email" type="email" label="" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" messageWhenPatternMismatch="Enter valid email"/>
                         <ui:inputTextArea aura:id="comments" label="" class="textarea-info" value="" rows="5" resizable="true" placeholder="Additional Info"/>
                     </lightning:layoutItem>
                     <lightning:layoutItem size="6" class="slds-m-left_medium">

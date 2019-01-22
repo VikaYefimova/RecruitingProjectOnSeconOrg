@@ -3,28 +3,6 @@
     LastClearTime="0001-01-01T00:00:00">
     <TestClassesCache>
         <TestClassCache>
-            <TestClassId>01p1t00000By91CAAR</TestClassId>
-            <TestQueueId>7091t0000001EbhAAE</TestQueueId>
-            <TestMethodsCache>
-                <TestMethodCache>
-                    <ApexLogId>07L1t000002PPavEAG</ApexLogId>
-                    <Name>testChangePasswordController</Name>
-                    <TestResultStatus>Pass</TestResultStatus>
-                </TestMethodCache>
-            </TestMethodsCache>
-        </TestClassCache>
-        <TestClassCache>
-            <TestClassId>01p1t00000By91EAAR</TestClassId>
-            <TestQueueId>7091t0000001EbiAAE</TestQueueId>
-            <TestMethodsCache>
-                <TestMethodCache>
-                    <ApexLogId>07L1t000002PPaHEAW</ApexLogId>
-                    <Name>testForgotPasswordController</Name>
-                    <TestResultStatus>Pass</TestResultStatus>
-                </TestMethodCache>
-            </TestMethodsCache>
-        </TestClassCache>
-        <TestClassCache>
             <TestClassId>01p1t00000ByEnuAAF</TestClassId>
             <TestQueueId>7091t0000001EbjAAE</TestQueueId>
             <TestMethodsCache>
@@ -236,6 +214,28 @@ Class.JobAdvertisementPageControllerTest.testSearchAndRecordsManagingFlow: line 
                 <TestMethodCache>
                     <ApexLogId>07L1t000002PPabEAG</ApexLogId>
                     <Name>uploadCandidateImageTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000By91CAAR</TestClassId>
+            <TestQueueId>7091t0000001EbhAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPavEAG</ApexLogId>
+                    <Name>testChangePasswordController</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p1t00000By91EAAR</TestClassId>
+            <TestQueueId>7091t0000001EbiAAE</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <ApexLogId>07L1t000002PPaHEAW</ApexLogId>
+                    <Name>testForgotPasswordController</Name>
                     <TestResultStatus>Pass</TestResultStatus>
                 </TestMethodCache>
             </TestMethodsCache>
