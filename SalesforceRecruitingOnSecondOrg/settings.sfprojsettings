@@ -1,4 +1,16 @@
 {
+  "LightningPreviewerPerProject": {
+    "activeApplicationForComponent": {
+      "modalWindow": "JobAdvertisementsApplication"
+    },
+    "collapsedBundles": [
+      "modalWindow",
+      "jobAdvertisements"
+    ],
+    "expandedBundles": [],
+    "customUrls": {},
+    "parameters": {}
+  },
   "CodeMapPerProject": {
     "collapsedPanels": []
   },

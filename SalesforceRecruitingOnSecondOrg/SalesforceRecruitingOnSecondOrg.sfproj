@@ -131,6 +131,13 @@
       <BundleName>modalWindow</BundleName>
       <LightningType>Component</LightningType>
     </Compile>
+    <Compile Include="aura\modalWindow\modalWindow.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\modalWindow\modalWindow.css</PhysicalRelativePath>
+      <BundleName>modalWindow</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\modalWindow\modalWindowController.js">
       <PhysicalRelativePath>src\aura\modalWindow\modalWindowController.js</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
@@ -883,10 +890,11 @@
       <StaticResourcePath>staticresources\SiteSamples\SiteStyles.css</StaticResourcePath>
     </StaticZipItem>
     <StaticZipItem Include="staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd">
-      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data\TWS_Sync_Data.twssd</PhysicalRelativePath>
       <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data\TWS_Sync_Data.twssd</PhysicalRelativePath>
       <StaticResource>TWS_Sync_Data</StaticResource>
       <StaticResourcePath>staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
     </StaticZipItem>
   </ItemGroup>
   <ItemGroup>
