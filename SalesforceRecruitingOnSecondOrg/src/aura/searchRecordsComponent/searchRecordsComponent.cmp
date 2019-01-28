@@ -1,4 +1,4 @@
-<aura:component >
+<aura:component implements="forceCommunity:availableForAllPageTypes">
     <aura:attribute name="publishDate" type="Date"/>
     <aura:attribute name="dateOperator" type="String"/>
     <aura:attribute name="salary" type="String"/>

@@ -62,24 +62,4 @@
 			component.set("v.noFieldComplete", true);
 		}
     },
-    validate : function(component, event, helper) {
-        console.log("hello in validation");
-        var pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
-        var emailField = component.find("leadEMail");
-        var emailFieldValue = component.find("leadEMail").get("v.value");
-        console.log(emailField.match(pattern));
-        if(!$A.util.isEmpty(emailFieldValue)){
-        if(emailFieldValue.match(pattern)){
-            //$A.util.removeClass(emailField, 'validateField');
-            emailField.set("v.errors", [{message: null}]);
-            $A.util.removeClass(emailField, 'slds-has-error');
-        }
-        else if(!emailFieldValue.match(pattern)){
-            //$A.util.addClass(emailField, 'validateField');
-            emailField.set("v.errors", [{message: "Please Enter a Valid Email Address"}]);
-            $A.util.addClass(emailField, 'slds-has-error');
-            //sValidEmail = false;
-        }
-        }
-    }
 })

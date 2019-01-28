@@ -1,0 +1,5 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <header>
+    	<h1>Job Advertisements</h1>
+    </header>	
+</aura:component>

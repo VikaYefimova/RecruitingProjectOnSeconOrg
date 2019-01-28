@@ -19,17 +19,23 @@
     <Folder Include="AnonymousApex" />
     <Folder Include="aura\" />
     <Folder Include="aura\closeModalWindow\" />
+    <Folder Include="aura\CommunitiesHeader\" />
     <Folder Include="aura\DeselectJob\" />
+    <Folder Include="aura\forgotPassword\" />
     <Folder Include="aura\jobAdvertisementComponent\" />
     <Folder Include="aura\JobAdvertisementsApplication\" />
     <Folder Include="aura\jobAdvertisements\" />
+    <Folder Include="aura\loginForm\" />
     <Folder Include="aura\modalWindow\" />
     <Folder Include="aura\ResetSearch\" />
     <Folder Include="aura\searchRecordsComponent\" />
     <Folder Include="aura\SearchRecords\" />
     <Folder Include="aura\selectedJobAdvertisementComponent\" />
     <Folder Include="aura\SelectJob\" />
+    <Folder Include="aura\selfRegister\" />
     <Folder Include="aura\sendCandidateCV\" />
+    <Folder Include="aura\setExpId\" />
+    <Folder Include="aura\setStartUrl\" />
     <Folder Include="classes\" />
     <Folder Include="components\" />
     <Folder Include="objects\" />
@@ -65,11 +71,67 @@
       <BundleName>closeModalWindow</BundleName>
       <LightningType>Event</LightningType>
     </Compile>
+    <Compile Include="aura\CommunitiesHeader\CommunitiesHeader.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\CommunitiesHeader\CommunitiesHeader.cmp</PhysicalRelativePath>
+      <BundleName>CommunitiesHeader</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\CommunitiesHeader\CommunitiesHeader.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\CommunitiesHeader\CommunitiesHeader.css</PhysicalRelativePath>
+      <BundleName>CommunitiesHeader</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\CommunitiesHeader\CommunitiesHeader.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\CommunitiesHeader\CommunitiesHeader.design</PhysicalRelativePath>
+      <BundleName>CommunitiesHeader</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\DeselectJob\DeselectJob.evt">
       <PhysicalRelativePath>src\aura\DeselectJob\DeselectJob.evt</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
       <BundleName>DeselectJob</BundleName>
       <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.cmp</PhysicalRelativePath>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.css</PhysicalRelativePath>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.design</PhysicalRelativePath>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordController.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordController.js</PhysicalRelativePath>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Controller</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordHelper.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordHelper.js</PhysicalRelativePath>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Helper</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
     </Compile>
     <Compile Include="aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp">
       <PhysicalRelativePath>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp</PhysicalRelativePath>
@@ -113,6 +175,13 @@
       <BundleName>jobAdvertisements</BundleName>
       <LightningType>Style</LightningType>
     </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisements.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisements.design</PhysicalRelativePath>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\jobAdvertisements\jobAdvertisementsController.js">
       <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisementsController.js</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
@@ -124,6 +193,41 @@
       <SubType>AuraDefinitionBundle</SubType>
       <BundleName>jobAdvertisements</BundleName>
       <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.cmp</PhysicalRelativePath>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.css</PhysicalRelativePath>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.design</PhysicalRelativePath>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormController.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\loginForm\loginFormController.js</PhysicalRelativePath>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Controller</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormHelper.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\loginForm\loginFormHelper.js</PhysicalRelativePath>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Helper</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
     </Compile>
     <Compile Include="aura\modalWindow\modalWindow.cmp">
       <PhysicalRelativePath>src\aura\modalWindow\modalWindow.cmp</PhysicalRelativePath>
@@ -198,10 +302,59 @@
       <BundleName>SelectJob</BundleName>
       <LightningType>Event</LightningType>
     </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.cmp</PhysicalRelativePath>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.css</PhysicalRelativePath>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.design</PhysicalRelativePath>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterController.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterController.js</PhysicalRelativePath>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Controller</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterHelper.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterHelper.js</PhysicalRelativePath>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Helper</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\sendCandidateCV\sendCandidateCV.evt">
       <SubType>AuraDefinitionBundle</SubType>
       <PhysicalRelativePath>src\aura\sendCandidateCV\sendCandidateCV.evt</PhysicalRelativePath>
       <BundleName>sendCandidateCV</BundleName>
+      <LightningType>Event</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\setExpId\setExpId.evt">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\setExpId\setExpId.evt</PhysicalRelativePath>
+      <BundleName>setExpId</BundleName>
+      <LightningType>Event</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\setStartUrl\setStartUrl.evt">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\setStartUrl\setStartUrl.evt</PhysicalRelativePath>
+      <BundleName>setStartUrl</BundleName>
       <LightningType>Event</LightningType>
       <MetadataType>AuraDefinitionBundle</MetadataType>
     </Compile>
@@ -216,6 +369,46 @@
     <Compile Include="classes\ChangePasswordControllerTest.cls">
       <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
     </Compile>
     <Compile Include="classes\ForgotPasswordController.cls">
       <PhysicalRelativePath>src\classes\ForgotPasswordController.cls</PhysicalRelativePath>
@@ -240,6 +433,36 @@
     <Compile Include="classes\JobAdvertisementsController.cls">
       <PhysicalRelativePath>src\classes\JobAdvertisementsController.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterController.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterControllerTest.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
     </Compile>
     <Compile Include="classes\ListOfJobAdvertisementController.cls">
       <PhysicalRelativePath>src\classes\ListOfJobAdvertisementController.cls</PhysicalRelativePath>
@@ -337,6 +560,31 @@
       <PhysicalRelativePath>src\pages\ChangePassword.page</PhysicalRelativePath>
       <SubType>Page</SubType>
     </Compile>
+    <Compile Include="pages\CommunitiesLanding.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
+    <Compile Include="pages\CommunitiesLogin.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfReg.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfRegConfirm.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
+    <Compile Include="pages\CommunitiesTemplate.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
     <Compile Include="pages\example.page">
       <PhysicalRelativePath>src\pages\example.page</PhysicalRelativePath>
       <SubType>Page</SubType>
@@ -415,6 +663,11 @@
       <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
       <SubType>Object</SubType>
     </Object>
+    <Object Include="objects\AccountBrand.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AccountBrand.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
     <Object Include="objects\AccountCleanInfo.object">
       <PhysicalRelativePath>src\objects\AccountCleanInfo.object</PhysicalRelativePath>
       <SubType>Object</SubType>
@@ -458,6 +711,21 @@
     <Object Include="objects\CaseContactRole.object">
       <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
       <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgram.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\ChannelProgram.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\ChannelProgramLevel.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\ChannelProgramLevel.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\ChannelProgramMember.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\ChannelProgramMember.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
     </Object>
     <Object Include="objects\ChatterActivity.object">
       <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
@@ -551,6 +819,11 @@
       <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
       <SubType>Object</SubType>
     </Object>
+    <Object Include="objects\NetworkMember.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\NetworkMember.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
     <Object Include="objects\Opportunity.object">
       <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
       <SubType>Object</SubType>
@@ -578,6 +851,26 @@
     <Object Include="objects\OrgDeleteRequest.object">
       <PhysicalRelativePath>src\objects\OrgDeleteRequest.object</PhysicalRelativePath>
       <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerFundAllocation.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\PartnerFundAllocation.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\PartnerFundClaim.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\PartnerFundClaim.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\PartnerFundRequest.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\PartnerFundRequest.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\PartnerMarketingBudget.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\PartnerMarketingBudget.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
     </Object>
     <Object Include="objects\PartnerRole.object">
       <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
@@ -919,6 +1212,54 @@
       </PackageName>
       <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
     </None>
+    <None Include="classes\CommunitiesLandingController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesLandingController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesLandingControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesSelfRegController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CommunitiesSelfRegControllerTest.cls</DependentUpon>
+    </None>
     <None Include="classes\ForgotPasswordController.cls-meta.xml">
       <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
       <SubType>Metadata</SubType>
@@ -960,6 +1301,42 @@
       <PackageName>
       </PackageName>
       <DependentUpon>classes\JobAdvertisementsController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningLoginFormController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningLoginFormControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterController.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningSelfRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterControllerTest.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\LightningSelfRegisterControllerTest.cls</DependentUpon>
     </None>
     <None Include="classes\ListOfJobAdvertisementController.cls-meta.xml">
       <PhysicalRelativePath>src\classes\ListOfJobAdvertisementController.cls-meta.xml</PhysicalRelativePath>
@@ -1128,6 +1505,36 @@
       <PackageName>
       </PackageName>
       <DependentUpon>pages\ChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLanding.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\CommunitiesLanding.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLogin.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\CommunitiesLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfReg.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\CommunitiesSelfReg.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfRegConfirm.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\CommunitiesSelfRegConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesTemplate.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\CommunitiesTemplate.page</DependentUpon>
     </None>
     <None Include="pages\example.page-meta.xml">
       <PhysicalRelativePath>src\pages\example.page-meta.xml</PhysicalRelativePath>

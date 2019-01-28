@@ -1,4 +1,4 @@
-<aura:component controller="InsertCandidateCV">
+<aura:component controller="InsertCandidateCV" implements="forceCommunity:availableForAllPageTypes" access="global">
     <aura:attribute name="candidateStatus" type="String" />
     <aura:attribute name="selectedJobs" type="Job_Advertisement__c[]" />
     <aura:attribute name="image" type="String" />

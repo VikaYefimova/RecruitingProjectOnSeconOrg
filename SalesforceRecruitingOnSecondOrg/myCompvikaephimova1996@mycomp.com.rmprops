@@ -8,16 +8,64 @@
             <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.cmp</ItemKey>
+            <Id>0Ad1t000001CxSaCAK</Id>
+            <Hash>9+DByB7uMLmIz5vmP8h7ow==</Hash>
+            <LastModifiedDateUtcTicks>131931466830000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.css</ItemKey>
+            <Id>0Ad1t000001CxSfCAK</Id>
+            <Hash>ZpXhNeOeNhatRRHHhUJnPA==</Hash>
+            <LastModifiedDateUtcTicks>131931467070000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.design</ItemKey>
+            <Id>0Ad1t000001CxSzCAK</Id>
+            <Hash>GalmlkJUunTrtyCiNa5ZDQ==</Hash>
+            <LastModifiedDateUtcTicks>131931465030000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\aura\DeselectJob\DeselectJob.evt</ItemKey>
             <Id>0Ad1t000001C941CAC</Id>
             <Hash>PxCfhJ0Ege7rAmc/TvtEIw==</Hash>
             <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\aura\forgotPassword\forgotPassword.cmp</ItemKey>
+            <Id>0Ad1t000001CxN4CAK</Id>
+            <Hash>4G08UUqcMHkiPpZXivopkw==</Hash>
+            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\forgotPassword\forgotPassword.css</ItemKey>
+            <Id>0Ad1t000001CxN7CAK</Id>
+            <Hash>BXQhL1RqMnghv/r0cmUIdg==</Hash>
+            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\forgotPassword\forgotPassword.design</ItemKey>
+            <Id>0Ad1t000001CxN8CAK</Id>
+            <Hash>S3YfeYmVf1zxabGiRnTehw==</Hash>
+            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\forgotPassword\forgotPasswordController.js</ItemKey>
+            <Id>0Ad1t000001CxN5CAK</Id>
+            <Hash>y5tfhbrQfgOP8IJNXh5ZdA==</Hash>
+            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\forgotPassword\forgotPasswordHelper.js</ItemKey>
+            <Id>0Ad1t000001CxN6CAK</Id>
+            <Hash>GIFbMg03bBwgyYtzVwnoWA==</Hash>
+            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp</ItemKey>
             <Id>0Ad1t000001B3c9CAC</Id>
-            <Hash>NcWLApKKRhXXgDIrAv9V5A==</Hash>
-            <LastModifiedDateUtcTicks>131926474630000000</LastModifiedDateUtcTicks>
+            <Hash>H8IxiCWUep2qtjDF0IM8iQ==</Hash>
+            <LastModifiedDateUtcTicks>131931457050000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.css</ItemKey>
@@ -34,20 +82,26 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponentRenderer.js</ItemKey>
             <Id>0Ad1t000001CIebCAG</Id>
-            <Hash>IbOWrsxsbqLxxA/ZHmVM6Q==</Hash>
-            <LastModifiedDateUtcTicks>131926482500000000</LastModifiedDateUtcTicks>
+            <Hash>KDhsVTKqMBwGgQ6MehAZ/A==</Hash>
+            <LastModifiedDateUtcTicks>131927140440000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.cmp</ItemKey>
             <Id>0Ad1t000001B3bkCAC</Id>
-            <Hash>91LbBSFvjrY06QuHfR8VdQ==</Hash>
-            <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
+            <Hash>ofFEWt2ZWyaL6PJWhVcnEg==</Hash>
+            <LastModifiedDateUtcTicks>131931463420000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.css</ItemKey>
             <Id>0Ad1t000001C7s7CAC</Id>
             <Hash>hvDTAWvOvpivFJ7wOLEZfg==</Hash>
             <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.design</ItemKey>
+            <Id>0Ad1t000001CxS6CAK</Id>
+            <Hash>GalmlkJUunTrtyCiNa5ZDQ==</Hash>
+            <LastModifiedDateUtcTicks>131931458820000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsController.js</ItemKey>
@@ -68,10 +122,40 @@
             <LastModifiedDateUtcTicks>131922967760000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\aura\loginForm\loginForm.cmp</ItemKey>
+            <Id>0Ad1t000001CxMuCAK</Id>
+            <Hash>ZRbB/sbQp0GXgiAW+F/xNw==</Hash>
+            <LastModifiedDateUtcTicks>131931449230000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\loginForm\loginForm.css</ItemKey>
+            <Id>0Ad1t000001CxMxCAK</Id>
+            <Hash>wpOWDyxZAFQLcoDLl7UWAQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449240000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\loginForm\loginForm.design</ItemKey>
+            <Id>0Ad1t000001CxMyCAK</Id>
+            <Hash>/T0gi+JYLi0AhrSb6YUAdQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449240000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\loginForm\loginFormController.js</ItemKey>
+            <Id>0Ad1t000001CxMvCAK</Id>
+            <Hash>4k9sGTV/hXrHCN6AP4uPGQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449240000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\loginForm\loginFormHelper.js</ItemKey>
+            <Id>0Ad1t000001CxMwCAK</Id>
+            <Hash>26Bam+QPs/9eBFREiQyxlA==</Hash>
+            <LastModifiedDateUtcTicks>131931449240000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindow.cmp</ItemKey>
             <Id>0Ad1t000001CXNRCA4</Id>
-            <Hash>9Jq7+AqxXEBgHl3I+Eqb1w==</Hash>
-            <LastModifiedDateUtcTicks>131926473380000000</LastModifiedDateUtcTicks>
+            <Hash>7+hU+YzkiWlf8HdRkenGUg==</Hash>
+            <LastModifiedDateUtcTicks>131931457130000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindow.css</ItemKey>
@@ -82,8 +166,8 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindowController.js</ItemKey>
             <Id>0Ad1t000001CXNWCA4</Id>
-            <Hash>4AuxW9GsaHmMmZ15FQR67g==</Hash>
-            <LastModifiedDateUtcTicks>131926456600000000</LastModifiedDateUtcTicks>
+            <Hash>/8sAw++NH+jGWuCqOK/7Rg==</Hash>
+            <LastModifiedDateUtcTicks>131927140440000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\ResetSearch\ResetSearch.evt</ItemKey>
@@ -100,14 +184,14 @@
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponent.cmp</ItemKey>
             <Id>0Ad1t000001BL8ZCAW</Id>
-            <Hash>yQFdRUBdjnwBU+ic/xSBEg==</Hash>
-            <LastModifiedDateUtcTicks>131922967770000000</LastModifiedDateUtcTicks>
+            <Hash>qtXjfEsBnOe0qYt3MAYo8Q==</Hash>
+            <LastModifiedDateUtcTicks>131931469500000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponent.css</ItemKey>
             <Id>0Ad1t000001BLAQCA4</Id>
-            <Hash>gKlMoBy9s9ku8iOdl8udvA==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>UbYC2pyh4ei/TFv0+VRI2w==</Hash>
+            <LastModifiedDateUtcTicks>131931462220000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponentController.js</ItemKey>
@@ -140,10 +224,52 @@
             <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\aura\selfRegister\selfRegister.cmp</ItemKey>
+            <Id>0Ad1t000001CxMzCAK</Id>
+            <Hash>emCBMlZVDuuNJbgQYuyOqg==</Hash>
+            <LastModifiedDateUtcTicks>131931449240000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\selfRegister\selfRegister.css</ItemKey>
+            <Id>0Ad1t000001CxN2CAK</Id>
+            <Hash>ntUniowvfunZKI4FOp/tbw==</Hash>
+            <LastModifiedDateUtcTicks>131931449250000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\selfRegister\selfRegister.design</ItemKey>
+            <Id>0Ad1t000001CxN3CAK</Id>
+            <Hash>yjDNckc4PNNHziJ0KH23Ig==</Hash>
+            <LastModifiedDateUtcTicks>131931449250000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\selfRegister\selfRegisterController.js</ItemKey>
+            <Id>0Ad1t000001CxN0CAK</Id>
+            <Hash>/1vCFIyG62skZttHsPTpLA==</Hash>
+            <LastModifiedDateUtcTicks>131931449250000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\selfRegister\selfRegisterHelper.js</ItemKey>
+            <Id>0Ad1t000001CxN1CAK</Id>
+            <Hash>9QD0rpM2cCvuaNmLxbEBxA==</Hash>
+            <LastModifiedDateUtcTicks>131931449250000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\aura\sendCandidateCV\sendCandidateCV.evt</ItemKey>
             <Id>0Ad1t000001Cnv5CAC</Id>
             <Hash>vGBohrkm0YIz2qlKx3pjvg==</Hash>
             <LastModifiedDateUtcTicks>131925673490000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\setExpId\setExpId.evt</ItemKey>
+            <Id>0Ad1t000001CxMpCAK</Id>
+            <Hash>6sOIo/uts6mhyMrBZeFXJQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\setStartUrl\setStartUrl.evt</ItemKey>
+            <Id>0Ad1t000001CxMqCAK</Id>
+            <Hash>ElLuHucx3Pu34wGffUMbkw==</Hash>
+            <LastModifiedDateUtcTicks>131931449230000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\AssetImage.cls</ItemKey>
@@ -177,6 +303,94 @@
             <ItemKey>src\classes\ChangePasswordControllerTest.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
             <LastModifiedDateUtcTicks>131922967750000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLandingController.cls</ItemKey>
+            <Id>01p1t00000L2jurAAB</Id>
+            <Hash>2MFIKanFgJX+AJPQ8/xRYg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLandingController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLandingControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2jusAAB</Id>
+            <Hash>kUYm5NBt3/mxtxJR0VidrQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLandingControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLoginController.cls</ItemKey>
+            <Id>01p1t00000L2jupAAB</Id>
+            <Hash>XUUy4jUp7f5AEcw7TVlVQQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLoginController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLoginControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2juqAAB</Id>
+            <Hash>azdU/2VNXhJlcN0TuYyzWQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesLoginControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegConfirmController.cls</ItemKey>
+            <Id>01p1t00000L2juvAAB</Id>
+            <Hash>yRKE+7HvnAZ6f6Qb+xkzJA==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegConfirmController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegConfirmControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2juwAAB</Id>
+            <Hash>shX7GeYKnS5RlS5JNnor9g==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegController.cls</ItemKey>
+            <Id>01p1t00000L2jutAAB</Id>
+            <Hash>kO9Ab9anZL9NglHcNB2BTA==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2juuAAB</Id>
+            <Hash>lj9aDHDl5+W2o3mGu29Q/g==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\CommunitiesSelfRegControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449210000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\ForgotPasswordController.cls</ItemKey>
@@ -243,6 +457,72 @@
             <ItemKey>src\classes\JobAdvertisementsController.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
             <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningForgotPasswordController.cls</ItemKey>
+            <Id>01p1t00000L2juyAAB</Id>
+            <Hash>0jFNLP5ahZL5q9Tq9kEGFQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningForgotPasswordController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningForgotPasswordControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2jv1AAB</Id>
+            <Hash>vTFfu3yDq56R3w3HDT5Grw==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningForgotPasswordControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningLoginFormController.cls</ItemKey>
+            <Id>01p1t00000L2juzAAB</Id>
+            <Hash>JY8bloTsKUSHC90AoCZyYQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningLoginFormController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningLoginFormControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2jv0AAB</Id>
+            <Hash>4S4/1QTjsuySZjWQA1+liw==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningLoginFormControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningSelfRegisterController.cls</ItemKey>
+            <Id>01p1t00000L2juxAAB</Id>
+            <Hash>ZfND/a62ECQFS/cWvwFaBg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningSelfRegisterController.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningSelfRegisterControllerTest.cls</ItemKey>
+            <Id>01p1t00000L2jv2AAB</Id>
+            <Hash>jfK6YQYCRErPWCFgpFzs5g==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\classes\LightningSelfRegisterControllerTest.cls-meta.xml</ItemKey>
+            <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\ListOfJobAdvertisementController.cls</ItemKey>
@@ -471,6 +751,12 @@
             <LastModifiedDateUtcTicks>131923016975747584</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\objects\AccountBrand.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>ZW808OX2XzcFn5o2J6hcMA==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\objects\AccountCleanInfo.object</ItemKey>
             <Id>000000000000000AAA</Id>
             <Hash>/uYbk7Xa3gTiAfu1ZHv2oA==</Hash>
@@ -535,6 +821,24 @@
             <Id>000000000000000AAA</Id>
             <Hash>zgRn6AROIa8KlNqrNcUd6A==</Hash>
             <LastModifiedDateUtcTicks>131923016975747584</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\ChannelProgram.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>AdkYrEsUqBR2PIye6OBR8g==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\ChannelProgramLevel.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>9prZpoIZ2iJ8Boe021jPIQ==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\ChannelProgramMember.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>FXWj4i6awulZD37trUS9AA==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\objects\ChatterActivity.object</ItemKey>
@@ -675,6 +979,12 @@
             <LastModifiedDateUtcTicks>131923016975747584</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
+            <ItemKey>src\objects\NetworkMember.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>U24WANmuGogztWOMF+eYww==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\objects\Opportunity.object</ItemKey>
             <Id>000000000000000AAA</Id>
             <Hash>unGxVWA+RhabSboIqvBWEw==</Hash>
@@ -715,6 +1025,30 @@
             <Id>000000000000000AAA</Id>
             <Hash>lhT1FxNnkk0itU1ZBqougw==</Hash>
             <LastModifiedDateUtcTicks>131923016975747584</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\PartnerFundAllocation.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>cBM1WyVgpcCcNRnVqzEFcA==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\PartnerFundClaim.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>fPmqqzZIq4rlqKYLYVcKEg==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\PartnerFundRequest.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>Iao93K2pwiMGM2BhF4gv9Q==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\objects\PartnerMarketingBudget.object</ItemKey>
+            <Id>000000000000000AAA</Id>
+            <Hash>xHtrd//FoB/l5KuGfMfnMw==</Hash>
+            <LastModifiedDateUtcTicks>131931560355609474</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\objects\PartnerRole.object</ItemKey>
@@ -885,6 +1219,61 @@
             <ItemKey>src\pages\ChangePassword.page-meta.xml</ItemKey>
             <Hash>gPQzuuyPT9UpULPQTlWQjg==</Hash>
             <LastModifiedDateUtcTicks>131852859120000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesLanding.page</ItemKey>
+            <Id>0661t000004gSt4AAE</Id>
+            <Hash>nNDxOaLNiKtAwH5hxTZAAQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesLanding.page-meta.xml</ItemKey>
+            <Hash>tdAUwCT3BhpZ6x/9H+C5Kg==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesLogin.page</ItemKey>
+            <Id>0661t000004gSt3AAE</Id>
+            <Hash>BF0sUu2WP/fy9PrUmBW3aw==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesLogin.page-meta.xml</ItemKey>
+            <Hash>nAkJUKqGBtQiJfAgDBqXkQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesSelfReg.page</ItemKey>
+            <Id>0661t000004gSt5AAE</Id>
+            <Hash>H/1MsUqfVcD6NPXIQmqflw==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesSelfReg.page-meta.xml</ItemKey>
+            <Hash>0UMbyoOV+y5L3f4/oT4drQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesSelfRegConfirm.page</ItemKey>
+            <Id>0661t000004gSt6AAE</Id>
+            <Hash>huNjDwjJ4U4oEDwjz/qIKQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesSelfRegConfirm.page-meta.xml</ItemKey>
+            <Hash>jHQDi7K2rG6ASc2jhGtSIQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesTemplate.page</ItemKey>
+            <Id>0661t000004gSt2AAE</Id>
+            <Hash>f/BccDIopEdTXqHmNeRNrw==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\pages\CommunitiesTemplate.page-meta.xml</ItemKey>
+            <Hash>FFfR/AQBA4R5pb2Sz8wSCQ==</Hash>
+            <LastModifiedDateUtcTicks>131931449220000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\pages\example.page</ItemKey>
@@ -1111,8 +1500,8 @@
         <RemoteItemProperties>
             <ItemKey>TWS_Sync_Data</ItemKey>
             <Id>0811t000000VvqiAAC</Id>
-            <Hash>J/YLDkue6l0I7UKBxaJ0AQ==</Hash>
-            <LastModifiedDateUtcTicks>131925666660000000</LastModifiedDateUtcTicks>
+            <Hash>Rrc+shxwjpcTjCH+2yJYDw==</Hash>
+            <LastModifiedDateUtcTicks>131926482790000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
     </Items>
 </RemotePropertiesSet>

@@ -1,4 +1,4 @@
-<aura:component controller="JobAdvertisementsController">
+<aura:component controller="JobAdvertisementsController" implements="forceCommunity:availableForAllPageTypes" access="global">
 	<aura:attribute name="job" type="Job_Advertisement__c"/>
     <aura:attribute name="jobs" type="Object[]"/>
     <aura:attribute name="selectedJobs" type="Object[]" />
