@@ -6,7 +6,7 @@
         component.set("v.publishDate", "");
         component.set("v.salary", "");
 		helper.getJobs(component, event);
-        component.find("applyButton").set("v.disabled", true);
+        //component.find("applyButton").set("v.disabled", true);
 	},
     deselectHandler : function(component, event, helper){
         console.log("tyt");
@@ -71,60 +71,28 @@
         component.set("v.pageNumber", 0);
         console.log(component.get("v.pageNumber") + " and " + component.get("v.lastPageNumber"));
         component.set("v.disablePrevious", true);
-        if(component.get("v.pageNumber") != component.get("v.lastPageNumber")){
-            component.set("v.disableNext", false);
-        }
-        else{
-            component.set("v.disableNext", true);
-        }
         helper.getJobs(component, event);
     },
     goToPreviousPage : function(component, event, helper){
         var pageNumber = parseInt(component.get("v.pageNumber")) - 1;
         component.set("v.pageNumber", pageNumber);
         console.log(component.get("v.pageNumber") + " and " + component.get("v.lastPageNumber"));
-        if(component.get("v.pageNumber") === 0){
-            component.set("v.disablePrevious", true);
-        }
-        else{
-            component.set("v.disablePrevious", false);
-        }
-        if(component.get("v.pageNumber") === component.get("v.lastPageNumber")){
-            component.set("v.disableNext", true);
-        }
-        else{
-            component.set("v.disableNext", false);
-        }
         helper.getJobs(component, event);
     },
     goToNextPage : function(component, event, helper){
         var pageNumber = parseInt(component.get("v.pageNumber")) + 1;
         console.log('pageNumber' + pageNumber);
         component.set("v.pageNumber", pageNumber);
-        if(component.get("v.pageNumber") === component.get("v.lastPageNumber")){
-            component.set("v.disableNext", true);
-        }
-        if(component.get("v.pageNumber") === 0){
-            component.set("v.disablePrevious", true);
-        }
-        else{
-            component.set("v.disablePrevious", false);
-        }
         helper.getJobs(component, event);
     },
     goToLastPage : function(component, event, helper){
         component.set("v.pageNumber", parseInt(component.get("v.lastPageNumber")));
         component.set("v.disableNext", true);
-        if(component.get("v.pageNumber") === 0){
-            component.set("v.disablePrevious", true);
-        }
-        else{
-            component.set("v.disablePrevious", false);
-        }
         console.log(component.get("v.pageNumber") + " and " + component.get("v.lastPageNumber"));
         helper.getJobs(component, event);
     },
     searchRecords : function(component, event, helper){
+        component.set("v.pageNumber", 0);
         var fullName = event.getParam("fullName");
         component.set("v.fullName", fullName);
         var operator = '';
@@ -153,11 +121,28 @@
         }
     },
     resetSearch : function(component, event, helper){
-    	component.set("v.pageNumber", '0');
+    	component.set("v.pageNumber", 0);
         component.set("v.fullName", "");
         component.set("v.operator", "");
         component.set("v.publishDate", "");
         component.set("v.salary", "");
 		helper.getJobs(component, event);
-	}
+	},
+    jobAdvertisementsChanged : function(component, event, helper){
+        console.log(component.get("v.pageNumber") + " and " + component.get("v.lastPageNumber"));
+        if(component.get("v.pageNumber") === 0){
+            console.log("current page === 0");
+            component.set("v.disablePrevious", true);
+        }
+        else if(component.get("v.pageNumber") > 0){
+            component.set("v.disablePrevious", false);
+        }
+        if(component.get("v.pageNumber") === component.get("v.lastPageNumber")){
+            console.log("last page == current page");
+            component.set("v.disableNext", true);
+        }
+        else{
+            component.set("v.disableNext", false);
+        }
+    }
 })

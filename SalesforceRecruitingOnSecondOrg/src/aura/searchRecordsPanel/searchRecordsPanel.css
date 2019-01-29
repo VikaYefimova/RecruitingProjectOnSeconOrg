@@ -1,0 +1,26 @@
+.THIS .selectedJobCountLabel{
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.THIS .circle-width-text{
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    float: left;
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+.THIS .slds-button.slds-button_neutral.apply-button{
+    float:right;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-width: 0px;   
+}

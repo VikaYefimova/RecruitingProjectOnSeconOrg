@@ -20,7 +20,7 @@
            selectedJobs.push(component.get("v.job"));
            component.set("v.selectedJobs", selectedJobs); 
            selectButton.set("v.label", "Deselect");
-           var selectjobEvent = component.getEvent("SelectJobEvent");
+           var selectjobEvent = $A.get("e.c:SelectJob");
            selectjobEvent.fire();
         }
         else if(selectButton.get("v.label") === "Deselect"){

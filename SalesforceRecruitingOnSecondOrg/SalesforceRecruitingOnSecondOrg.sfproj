@@ -18,17 +18,21 @@
   <ItemGroup>
     <Folder Include="AnonymousApex" />
     <Folder Include="aura\" />
+    <Folder Include="aura\applyForJob\" />
     <Folder Include="aura\closeModalWindow\" />
     <Folder Include="aura\CommunitiesHeader\" />
     <Folder Include="aura\DeselectJob\" />
     <Folder Include="aura\forgotPassword\" />
     <Folder Include="aura\jobAdvertisementComponent\" />
     <Folder Include="aura\JobAdvertisementsApplication\" />
+    <Folder Include="aura\JobAdvertisementsComponent\" />
     <Folder Include="aura\jobAdvertisements\" />
     <Folder Include="aura\loginForm\" />
     <Folder Include="aura\modalWindow\" />
+    <Folder Include="aura\pageContent\" />
     <Folder Include="aura\ResetSearch\" />
     <Folder Include="aura\searchRecordsComponent\" />
+    <Folder Include="aura\searchRecordsPanel\" />
     <Folder Include="aura\SearchRecords\" />
     <Folder Include="aura\selectedJobAdvertisementComponent\" />
     <Folder Include="aura\SelectJob\" />
@@ -65,6 +69,13 @@
     <Folder Include="triggers\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aura\applyForJob\applyForJob.evt">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\applyForJob\applyForJob.evt</PhysicalRelativePath>
+      <BundleName>applyForJob</BundleName>
+      <LightningType>Event</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\closeModalWindow\closeModalWindow.evt">
       <PhysicalRelativePath>src\aura\closeModalWindow\closeModalWindow.evt</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
@@ -163,6 +174,27 @@
       <BundleName>JobAdvertisementsApplication</BundleName>
       <LightningType>Application</LightningType>
     </Compile>
+    <Compile Include="aura\JobAdvertisementsComponent\JobAdvertisementsComponent.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponent.cmp</PhysicalRelativePath>
+      <BundleName>JobAdvertisementsComponent</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\JobAdvertisementsComponent\JobAdvertisementsComponent.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponent.design</PhysicalRelativePath>
+      <BundleName>JobAdvertisementsComponent</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\JobAdvertisementsComponent\JobAdvertisementsComponentController.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponentController.js</PhysicalRelativePath>
+      <BundleName>JobAdvertisementsComponent</BundleName>
+      <LightningType>Controller</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\jobAdvertisements\jobAdvertisements.cmp">
       <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisements.cmp</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
@@ -193,6 +225,13 @@
       <SubType>AuraDefinitionBundle</SubType>
       <BundleName>jobAdvertisements</BundleName>
       <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\jobAdvertisements\jobAdvertisementsRenderer.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\jobAdvertisements\jobAdvertisementsRenderer.js</PhysicalRelativePath>
+      <BundleName>jobAdvertisements</BundleName>
+      <LightningType>Renderer</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
     </Compile>
     <Compile Include="aura\loginForm\loginForm.cmp">
       <SubType>AuraDefinitionBundle</SubType>
@@ -248,6 +287,20 @@
       <BundleName>modalWindow</BundleName>
       <LightningType>Controller</LightningType>
     </Compile>
+    <Compile Include="aura\pageContent\pageContent.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\pageContent\pageContent.cmp</PhysicalRelativePath>
+      <BundleName>pageContent</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\pageContent\pageContent.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\pageContent\pageContent.design</PhysicalRelativePath>
+      <BundleName>pageContent</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
     <Compile Include="aura\ResetSearch\ResetSearch.evt">
       <PhysicalRelativePath>src\aura\ResetSearch\ResetSearch.evt</PhysicalRelativePath>
       <SubType>AuraDefinitionBundle</SubType>
@@ -271,6 +324,41 @@
       <SubType>AuraDefinitionBundle</SubType>
       <BundleName>searchRecordsComponent</BundleName>
       <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\searchRecordsPanel\searchRecordsPanel.cmp">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\searchRecordsPanel\searchRecordsPanel.cmp</PhysicalRelativePath>
+      <BundleName>searchRecordsPanel</BundleName>
+      <LightningType>Component</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\searchRecordsPanel\searchRecordsPanel.css">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\searchRecordsPanel\searchRecordsPanel.css</PhysicalRelativePath>
+      <BundleName>searchRecordsPanel</BundleName>
+      <LightningType>Style</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\searchRecordsPanel\searchRecordsPanel.design">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\searchRecordsPanel\searchRecordsPanel.design</PhysicalRelativePath>
+      <BundleName>searchRecordsPanel</BundleName>
+      <LightningType>Design</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\searchRecordsPanel\searchRecordsPanelController.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\searchRecordsPanel\searchRecordsPanelController.js</PhysicalRelativePath>
+      <BundleName>searchRecordsPanel</BundleName>
+      <LightningType>Controller</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
+    </Compile>
+    <Compile Include="aura\searchRecordsPanel\searchRecordsPanelHelper.js">
+      <SubType>AuraDefinitionBundle</SubType>
+      <PhysicalRelativePath>src\aura\searchRecordsPanel\searchRecordsPanelHelper.js</PhysicalRelativePath>
+      <BundleName>searchRecordsPanel</BundleName>
+      <LightningType>Helper</LightningType>
+      <MetadataType>AuraDefinitionBundle</MetadataType>
     </Compile>
     <Compile Include="aura\SearchRecords\SearchRecords.evt">
       <PhysicalRelativePath>src\aura\SearchRecords\SearchRecords.evt</PhysicalRelativePath>

@@ -1,11 +1,18 @@
 {
+  "VisualforcePreviewerPerProject": {
+    "collapsedPages": [],
+    "expandedPages": [],
+    "customUrls": {},
+    "parameters": {}
+  },
   "LightningPreviewerPerProject": {
     "activeApplicationForComponent": {
       "modalWindow": "JobAdvertisementsApplication"
     },
     "collapsedBundles": [
       "modalWindow",
-      "jobAdvertisements"
+      "jobAdvertisements",
+      "CommunitiesHeader"
     ],
     "expandedBundles": [],
     "customUrls": {},

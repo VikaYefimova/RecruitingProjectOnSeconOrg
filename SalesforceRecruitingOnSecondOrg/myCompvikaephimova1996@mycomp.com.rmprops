@@ -2,124 +2,154 @@
 <RemotePropertiesSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Items>
         <RemoteItemProperties>
+            <ItemKey>src\aura\applyForJob\applyForJob.evt</ItemKey>
+            <Id>0Ad1t000001CzlVCAS</Id>
+            <Hash>PxCfhJ0Ege7rAmc/TvtEIw==</Hash>
+            <LastModifiedDateUtcTicks>131932439720000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
             <ItemKey>src\aura\closeModalWindow\closeModalWindow.evt</ItemKey>
             <Id>0Ad1t000001CXTiCAO</Id>
             <Hash>vGBohrkm0YIz2qlKx3pjvg==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.cmp</ItemKey>
             <Id>0Ad1t000001CxSaCAK</Id>
             <Hash>9+DByB7uMLmIz5vmP8h7ow==</Hash>
-            <LastModifiedDateUtcTicks>131931466830000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.css</ItemKey>
             <Id>0Ad1t000001CxSfCAK</Id>
             <Hash>ZpXhNeOeNhatRRHHhUJnPA==</Hash>
-            <LastModifiedDateUtcTicks>131931467070000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\CommunitiesHeader\CommunitiesHeader.design</ItemKey>
             <Id>0Ad1t000001CxSzCAK</Id>
             <Hash>GalmlkJUunTrtyCiNa5ZDQ==</Hash>
-            <LastModifiedDateUtcTicks>131931465030000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\DeselectJob\DeselectJob.evt</ItemKey>
             <Id>0Ad1t000001C941CAC</Id>
             <Hash>PxCfhJ0Ege7rAmc/TvtEIw==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\forgotPassword\forgotPassword.cmp</ItemKey>
             <Id>0Ad1t000001CxN4CAK</Id>
             <Hash>4G08UUqcMHkiPpZXivopkw==</Hash>
-            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931624010000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\forgotPassword\forgotPassword.css</ItemKey>
             <Id>0Ad1t000001CxN7CAK</Id>
             <Hash>BXQhL1RqMnghv/r0cmUIdg==</Hash>
-            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931623980000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\forgotPassword\forgotPassword.design</ItemKey>
             <Id>0Ad1t000001CxN8CAK</Id>
             <Hash>S3YfeYmVf1zxabGiRnTehw==</Hash>
-            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931623980000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\forgotPassword\forgotPasswordController.js</ItemKey>
             <Id>0Ad1t000001CxN5CAK</Id>
             <Hash>y5tfhbrQfgOP8IJNXh5ZdA==</Hash>
-            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931623980000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\forgotPassword\forgotPasswordHelper.js</ItemKey>
             <Id>0Ad1t000001CxN6CAK</Id>
             <Hash>GIFbMg03bBwgyYtzVwnoWA==</Hash>
-            <LastModifiedDateUtcTicks>131931449260000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931624000000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.cmp</ItemKey>
             <Id>0Ad1t000001B3c9CAC</Id>
             <Hash>H8IxiCWUep2qtjDF0IM8iQ==</Hash>
-            <LastModifiedDateUtcTicks>131931457050000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponent.css</ItemKey>
             <Id>0Ad1t000001BA53CAG</Id>
             <Hash>HKjboixysIq9DA1dYKYQqA==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponentController.js</ItemKey>
             <Id>0Ad1t000001B9MQCA0</Id>
-            <Hash>Q7HybTebE7cqv4yOQvc9MA==</Hash>
-            <LastModifiedDateUtcTicks>131922967770000000</LastModifiedDateUtcTicks>
+            <Hash>FrndqcN5VdCakNe3C60bPg==</Hash>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisementComponent\jobAdvertisementComponentRenderer.js</ItemKey>
             <Id>0Ad1t000001CIebCAG</Id>
             <Hash>KDhsVTKqMBwGgQ6MehAZ/A==</Hash>
-            <LastModifiedDateUtcTicks>131927140440000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.cmp</ItemKey>
             <Id>0Ad1t000001B3bkCAC</Id>
-            <Hash>ofFEWt2ZWyaL6PJWhVcnEg==</Hash>
-            <LastModifiedDateUtcTicks>131931463420000000</LastModifiedDateUtcTicks>
+            <Hash>LQrPT0BPcb0Q9JBafgIMIQ==</Hash>
+            <LastModifiedDateUtcTicks>131932443530000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.css</ItemKey>
             <Id>0Ad1t000001C7s7CAC</Id>
             <Hash>hvDTAWvOvpivFJ7wOLEZfg==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisements.design</ItemKey>
             <Id>0Ad1t000001CxS6CAK</Id>
             <Hash>GalmlkJUunTrtyCiNa5ZDQ==</Hash>
-            <LastModifiedDateUtcTicks>131931458820000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsController.js</ItemKey>
             <Id>0Ad1t000001B3fZCAS</Id>
-            <Hash>hXCl08B51EFy53OrC4a31g==</Hash>
-            <LastModifiedDateUtcTicks>131925676510000000</LastModifiedDateUtcTicks>
+            <Hash>KBJfK2qypsaeDuQHtEKL5Q==</Hash>
+            <LastModifiedDateUtcTicks>131932439200000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsHelper.js</ItemKey>
             <Id>0Ad1t000001CHi8CAG</Id>
             <Hash>Xww6lskFZiFPR76/0KkQbw==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\jobAdvertisements\jobAdvertisementsRenderer.js</ItemKey>
+            <Id>0Ad1t000001CzhtCAC</Id>
+            <Hash>AB1Kl2eUirYIIAORjVVlSw==</Hash>
+            <LastModifiedDateUtcTicks>131932411830000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\JobAdvertisementsApplication\JobAdvertisementsApplication.app</ItemKey>
             <Id>0Ad1t000001B3D4CAK</Id>
             <Hash>8iSZhB6aSbgogdrSS0FqdQ==</Hash>
-            <LastModifiedDateUtcTicks>131922967760000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponent.cmp</ItemKey>
+            <Id>0Ad1t000001CxtECAS</Id>
+            <Hash>/J3vCJr7U5kCi4rOztTPVg==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponent.design</ItemKey>
+            <Id>0Ad1t000001CxtJCAS</Id>
+            <Hash>LM0MeiZN2zmgFFKtUDDW7Q==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\JobAdvertisementsComponent\JobAdvertisementsComponentController.js</ItemKey>
+            <Id>0Ad1t000001CxtFCAS</Id>
+            <Hash>aJa7Gq5SDlr7FwBQiFfowQ==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\loginForm\loginForm.cmp</ItemKey>
@@ -155,73 +185,115 @@
             <ItemKey>src\aura\modalWindow\modalWindow.cmp</ItemKey>
             <Id>0Ad1t000001CXNRCA4</Id>
             <Hash>7+hU+YzkiWlf8HdRkenGUg==</Hash>
-            <LastModifiedDateUtcTicks>131931457130000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindow.css</ItemKey>
             <Id>0Ad1t000001CpUlCAK</Id>
             <Hash>yeQq+db6VIIRCNDywJfduQ==</Hash>
-            <LastModifiedDateUtcTicks>131926413590000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\modalWindow\modalWindowController.js</ItemKey>
             <Id>0Ad1t000001CXNWCA4</Id>
             <Hash>/8sAw++NH+jGWuCqOK/7Rg==</Hash>
-            <LastModifiedDateUtcTicks>131927140440000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\pageContent\pageContent.cmp</ItemKey>
+            <Id>0Ad1t000001CzhZCAS</Id>
+            <Hash>wl4fTYImkcq3MH1UhtqoBA==</Hash>
+            <LastModifiedDateUtcTicks>131932403860000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\pageContent\pageContent.design</ItemKey>
+            <Id>0Ad1t000001CzheCAC</Id>
+            <Hash>ssRZMm3QMRK9GszlH5dodw==</Hash>
+            <LastModifiedDateUtcTicks>131932404530000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\ResetSearch\ResetSearch.evt</ItemKey>
             <Id>0Ad1t000001CU20CAG</Id>
-            <Hash>vGBohrkm0YIz2qlKx3pjvg==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>PxCfhJ0Ege7rAmc/TvtEIw==</Hash>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\SearchRecords\SearchRecords.evt</ItemKey>
             <Id>0Ad1t000001CNVFCA4</Id>
-            <Hash>JDeVskvjcnEXxTqqAKPTJQ==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>uvoBk8PNjmH2ngW0vzJZtg==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponent.cmp</ItemKey>
             <Id>0Ad1t000001BL8ZCAW</Id>
             <Hash>qtXjfEsBnOe0qYt3MAYo8Q==</Hash>
-            <LastModifiedDateUtcTicks>131931469500000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponent.css</ItemKey>
             <Id>0Ad1t000001BLAQCA4</Id>
             <Hash>UbYC2pyh4ei/TFv0+VRI2w==</Hash>
-            <LastModifiedDateUtcTicks>131931462220000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\searchRecordsComponent\searchRecordsComponentController.js</ItemKey>
             <Id>0Ad1t000001BNphCAG</Id>
-            <Hash>s9cAzLimXGFbn4JKPT2d8Q==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>NRfAphItBuhmCmbKthXnJA==</Hash>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\searchRecordsPanel\searchRecordsPanel.cmp</ItemKey>
+            <Id>0Ad1t000001CxtOCAS</Id>
+            <Hash>PUVZB4ke0u6lHv7YT1vBng==</Hash>
+            <LastModifiedDateUtcTicks>131932482910000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\searchRecordsPanel\searchRecordsPanel.css</ItemKey>
+            <Id>0Ad1t000001CxuHCAS</Id>
+            <Hash>II0nvQonGX9uDmOh6RpMyg==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\searchRecordsPanel\searchRecordsPanel.design</ItemKey>
+            <Id>0Ad1t000001CxtTCAS</Id>
+            <Hash>nBfRJyQHKKswFgnl4rzt6w==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\searchRecordsPanel\searchRecordsPanelController.js</ItemKey>
+            <Id>0Ad1t000001CxtPCAS</Id>
+            <Hash>pe6v3kzWAn/Dw24VTQzGUw==</Hash>
+            <LastModifiedDateUtcTicks>131932442360000000</LastModifiedDateUtcTicks>
+        </RemoteItemProperties>
+        <RemoteItemProperties>
+            <ItemKey>src\aura\searchRecordsPanel\searchRecordsPanelHelper.js</ItemKey>
+            <Id>0Ad1t000001CzhoCAC</Id>
+            <Hash>n/tJwgAE14kh1ztTwS4jsg==</Hash>
+            <LastModifiedDateUtcTicks>131932408570000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.cmp</ItemKey>
             <Id>0Ad1t000001BImgCAG</Id>
             <Hash>lHSoVnzv8930joNvfVeNvw==</Hash>
-            <LastModifiedDateUtcTicks>131922967760000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponent.css</ItemKey>
             <Id>0Ad1t000001C7rJCAS</Id>
             <Hash>NdpnK1FM8bNjD3FVmi04WQ==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\selectedJobAdvertisementComponent\selectedJobAdvertisementComponentController.js</ItemKey>
             <Id>0Ad1t000001BJgaCAG</Id>
             <Hash>x2kWIP4FYQ6Q7Mm49am/XA==</Hash>
-            <LastModifiedDateUtcTicks>131922967760000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702200000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\SelectJob\SelectJob.evt</ItemKey>
             <Id>0Ad1t000001C7xXCAS</Id>
-            <Hash>3euH8SDWOucl/iL4bxBtjg==</Hash>
-            <LastModifiedDateUtcTicks>131922967680000000</LastModifiedDateUtcTicks>
+            <Hash>vj/5IjkhjNwoOPyAsFyv9Q==</Hash>
+            <LastModifiedDateUtcTicks>131931702180000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\aura\selfRegister\selfRegister.cmp</ItemKey>
@@ -451,12 +523,12 @@
             <ItemKey>src\classes\JobAdvertisementsController.cls</ItemKey>
             <Id>01p1t00000HGCF9AAP</Id>
             <Hash>354U4flyilONIqPK27FkHw==</Hash>
-            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\JobAdvertisementsController.cls-meta.xml</ItemKey>
             <Hash>ddGmxf7Z68RUcjuoVtEGhg==</Hash>
-            <LastModifiedDateUtcTicks>131923140940000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>131931702190000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\LightningForgotPasswordController.cls</ItemKey>
@@ -1500,8 +1572,8 @@
         <RemoteItemProperties>
             <ItemKey>TWS_Sync_Data</ItemKey>
             <Id>0811t000000VvqiAAC</Id>
-            <Hash>Rrc+shxwjpcTjCH+2yJYDw==</Hash>
-            <LastModifiedDateUtcTicks>131926482790000000</LastModifiedDateUtcTicks>
+            <Hash>ZG/JXZyiPSa2q/38bjBOLg==</Hash>
+            <LastModifiedDateUtcTicks>131931696300000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
     </Items>
 </RemotePropertiesSet>

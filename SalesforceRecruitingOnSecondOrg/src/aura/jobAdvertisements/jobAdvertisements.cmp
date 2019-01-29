@@ -17,42 +17,18 @@
     <aura:attribute name="image" type="String" />
     <aura:attribute name="isOpen" type="boolean" default="false"/>
     <aura:handler name="init" value="{! this}" action="{!c.doInit}"/>
-    <aura:handler name="SelectJobEvent" event="c:SelectJob" action="{!c.selectedJobHandler}"/>
-    <aura:handler name="searchRecordsEvent" event="c:SearchRecords" action="{!c.searchRecords}"/>
-    <aura:handler name="resetSearchResults" event="c:ResetSearch" action="{!c.resetSearch}"/>
+    <aura:handler event="c:SearchRecords" action="{!c.searchRecords}"/>
+    <aura:handler event="c:ResetSearch" action="{!c.resetSearch}"/>
     <aura:handler name="closeWindow" event="c:closeModalWindow" action="{!c.closeModel}"/>
 	<aura:handler name="sendCVSuccessful" event="c:sendCandidateCV" action="{!c.sendCVHandler}"/>
-    <aura:handler   event="c:DeselectJob" action="{!c.deselectHandler}"/>
-    
-    
-    
-    <div>
-        <div>
-        	<div style="width: 25%; float: left; position:fixed; z-index: 9; background-color: white;">
+    <aura:handler name="change" value="{!v.jobAdvertisements}" action="{!c.jobAdvertisementsChanged}"/>
+    <aura:handler event="c:applyForJob" action="{!c.applyButtonClick}"/>
+        <div style="position: relative; top: 59px; z-index: 1;">
+                <div style="width: 20%; float: left; z-index: 1; background-color: white;">
                &nbsp; 
             </div>
-                <div style="width: 50%; float:left; left: 25%; position:fixed; z-index: 9; background-color: white;">
-                    <div style="width: 100%">
-                        <c:searchRecordsComponent />
-                    </div>    
-                </div>
-                <div style="width: 25%; float: left; position: fixed; left: 75%; z-index: 9; background-color: white; height: 51px;" class="slds-grid slds-grid_vertical-align-end">
-                    <div class="slds-m-left_medium" style="height: 30px; width: 59%;">
-                        <span class="selectedJobCountLabel">Selected Jobs</span>
-                        <ui:outputNumber class="circle-width-text" aura:id="selectedJobCount" value="{!v.selectJobCount}" format="00">
-                        </ui:outputNumber>
-                        <lightning:button class="apply-button" aura:id="applyButton" variant="neutral" label="Apply" onclick="{!c.applyButtonClick}"/>
-                    </div>
-                </div>
-        </div>
-         
-        <div style="position: relative; top: 59px; z-index: 1;">
-                <div style="width: 25%; clear: left; float: left; top: 69px;">
-                    &nbsp;
-                </div>
-                <div style="width: 50%; float: left; top: 69px;">
+                <div style="width: 60%; float: left; top: 59px;">
                     <div>
-                        {!v.body}
                         <span>
                             <aura:if isTrue="{!not(v.noRecordsFlag)}">
                                 <aura:iteration items="{!v.jobAdvertisements}" var="item">
@@ -68,9 +44,7 @@
                     </div>
                     
                 </div>
-                <div style="width:25%; float: left; position: relative; height: 100%;">
-                        <lightning:layout>
-                            <lightning:layoutItem class="left-align">
+                <div style="width:20%; float: left; position: relative; height: 100%;">
                                 <div class="slds-m-left_medium">
                                     <div class="slds-is-fixed" style="height: 75%; width:16%;">
                                             <div class="notFixedJobs">
@@ -80,10 +54,8 @@
                                             </div>
                                     </div>
                                 </div>
-                            </lightning:layoutItem>
-                        </lightning:layout>
                 </div>
-                <div class="slds-m-left_medium" style="width:25%; float: left; position: fixed; left: 75%; bottom: 10px; height: auto;">
+                <div class="slds-m-left_medium" style="width:20%; float: left; position: fixed; left: 75%; bottom: 10px; height: auto;">
                     <div  style="width: 250px; background-color: white; border-width: 1px; border-style: solid; border-color: #dddbda; height: 100%; border-radius: 0.25rem; bottom: 1px;">
                         <div  style="padding-top: 4px; padding-bottom: 4px;">
                             <div class="slds-align_absolute-center" style="margin-bottom: 4px;">
@@ -105,7 +77,6 @@
                         </div> 
                     </div>
             	</div>
-        </div>
     </div>
     <div class="modalWindowBlock" style="height: 640px;">
         <aura:if isTrue="{!v.isOpen}">

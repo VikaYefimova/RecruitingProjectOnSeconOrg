@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+	<aura:attribute name="selectJobCount" type="Integer" default="0" access="global"/>
+    <aura:handler   event="c:DeselectJob" action="{!c.deselectHandler}"/>
+    <aura:handler event="c:SelectJob" action="{!c.selectedJobHandler}"/>
+    <aura:registerEvent name="PressApplyButton" type="c:applyForJob" />
+    <div>
+        	<div style="width: 25%; float: left; position:fixed; z-index: 9; background-color: white;">
+               &nbsp; 
+            </div>
+                <div style="width: 50%; float:left; left: 25%; position:fixed; z-index: 9; background-color: white;">
+                    <div style="width: 100%">
+                        <c:searchRecordsComponent />
+                    </div>    
+                </div>
+                <div style="width: 25%; float: left; position: fixed; left: 75%; z-index: 9; background-color: white; height: 51px;" class="slds-grid slds-grid_vertical-align-end">
+                    <div class="slds-m-left_medium" style="height: 30px; width: 59%;">
+                        <span class="selectedJobCountLabel">Selected Jobs</span>
+                        <ui:outputNumber class="circle-width-text" aura:id="selectedJobCount" value="{!v.selectJobCount}" format="00">
+                        </ui:outputNumber>
+                        <lightning:button class="apply-button" aura:id="applyButton" variant="neutral" label="Apply" onclick="{!c.applyButtonClick}"/>
+                    </div>
+                </div>
+        </div>
+</aura:component>

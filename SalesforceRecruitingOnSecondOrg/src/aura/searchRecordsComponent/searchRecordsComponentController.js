@@ -12,7 +12,7 @@
         console.log("search date operator   " + component.get("v.dateOperator"));
         console.log("public date" + component.get("v.publishDate"));
         console.log("public date" + component.get("v.salary"));
-        var searchRecords = component.getEvent("searchRecordsEvent");
+        var searchRecords = $A.get("e.c:SearchRecords");
         searchRecords.setParams({
             fullName : component.find("fullName").get("v.value"),
             operator : component.get("v.dateOperator"),
@@ -22,7 +22,7 @@
         searchRecords.fire();
 	},
     resetResults: function(component, event, helper){
-        var resetSearchEvent = component.getEvent("resetSearchResults");
+        var resetSearchEvent = $A.get("e.c:ResetSearch");
         resetSearchEvent.fire();
         component.find("fullName").set("v.value", "");
         component.find("fieldDate").set("v.value", "");
